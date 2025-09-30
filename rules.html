@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/title-logo.png" type="image/png">
+  <title>Smoke-N-Wings</title>
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="../src/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../src/style.css" />
+  <link rel="stylesheet" href="../src/rules.css" />
+</head>
+
+<body>
+  <header class="w-full  pt-[4px] bg-[#fff] z-50 py-0 px-[30px] xl:px-[15px]">
+    <div class="max-w-[1225px] mx-auto flex items-center justify-between">
+      <div class="logo">
+        <a href="index.html" class="standard-logo">
+          <img src="../assets/images/logo.jpg" alt="standard-logo">
+        </a>
+        <a href="index.html" class="sticky-logo">
+          <img src="../images/logo.jpg" alt="sticky-logo">
+        </a>
+      </div>
+      <div class="flex items-center">
+        <nav id="nav-links" class="hidden lg:flex">
+          <ul
+            class="nav__links flex items-center gap-[20px] lg:gap-[34px] text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#000] py-10">
+            <li><a href="rules.html">Rules</a>
+            </li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="kids-q.html">Kids-Q</a></li>
+             <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="hidden sm:flex mr-[8px]">
+        <li>
+             <a href="enter-competition.html" class="enter-btn font-bebas-pro">Enter Competition</a>
+        </li>
+      </ul>
+
+
+      <div class="flex sm:hidden items-center gap-4">
+        <button id="menu-toggle" aria-label="Open menu" class="focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 51 51" fill="none">
+            <circle cx="25.5" cy="25.5" r="25.5" fill="#F65600" />
+            <path d="M25 21L35 21" stroke="white" stroke-width="2" />
+            <path d="M15 28L35 28" stroke="white" stroke-width="2" />
+          </svg>
+        </button>
+
+        <button id="menu-close" aria-label="Close menu" class="hidden focus:outline-none text-[#F65600] text-4xl">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav"
+        class="flex opacity-0 translate-x-0 fixed top-[78px] right-0 h-screen w-[350px] bg-[#FFE4D5] p-6 shadow-lg z-50 sm:hidden transition-all duration-500 ease-in-out">
+        <ul class="flex flex-col   gap-10 text-[18px] font-bold leading-[20px] text-[#031F42]">
+                        <li><a href="rules.html">Rules</a>
+                        </li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="kids-q.html">Kids-Q</a></li>
+                        <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+
+  <section class="banner  mt-[13px] relative">
+    <div class="bg-[#591419] relative z-10">
+      <div class="flex justify-center items-center pt-[60px] pb-[45px]">
+        <div class="absolute top-0 right-0 h-full w-[552px] bg-[#F65600] z-20"
+          style="    clip-path: polygon(100% 0, 100% 100%, 58% 100%, 38% 65%, 0 0);">
+        </div>
+        <div class="flex relative z-30 flex-col items-center gap-[18px] ">
+          <div class="sub-title">
+            <div class="txt">HOME</div>
+            <div class="divider" aria-hidden="true"></div>
+            <div class="txt">RULES</div>
+          </div>
+          <div class="banner-title">
+            <h2>the Gaming rules</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="menu">
+    <div class="max-w-[1214px] mx-auto  relative z-1">
+      <div class="hero-inner w-[644px]  ml-[-206px] mt-[78px]  absolute -top-[50px] left-1/2 -translate-x-1/2">
+        <div class=" menu-join-smoke !text-start">SMOKE-N-WINGS</div>
+      </div>
+      <div class="pt-[92px]">
+        <div class="menu-title">
+          <h2>SMOKE-N-WINGS <span>2025</span> RULES</h2>
+
+        </div>
+        <div class="menu-desc pt-[14px] font-jost">
+          <p>As a KCBS sanctioned Master Series Contest, all KCBS rules will be followed. The event and the judging
+            will be overseen by the KCBS Contest Representatives assigned to the event. Their decisions and
+            interpretations are final.</p>
+        </div>
+      </div>
+
+      <div class="pt-[66px]">
+        <div class="flex flex-col gap-[4px]">
+          <span class="text-black font-jost text-[24px] font-normal leading-normal tracking-[0.48px]">As a Master Series
+            Contest, teams will cook four meats:</span>
+          <span class="text-black font-jost text-[24px] font-normal leading-normal tracking-[0.48px]">The Four KCBS Meat
+            Categories are:</span>
+        </div>
+        <div class="grid grid-cols-2 gap-[34px] justify-center mt-[62px]">
+
+          <!-- Card 1 -->
+          <div class="w-[588px] h-[660px]  shadow-md border-[1.08px] border-[#E7E7E7] bg-[rgba(255,228,213,0.4)]">
+            <img src="../assets/images/chicken.png" alt="Chicken" class="w-full h-[320px] object-cover">
+            <div class="pt-[34px] px-[38px]">
+              <div class="flex  justify-between items-center">
+                <h2 class="text-[#000] mb-[16px] font-bebas-neue text-[44px] font-normal leading-[120%]">
+                  CHICKEN
+                </h2>
+                <div class="flex gap-[10px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <g clip-path="url(#clip0_2012_6)">
+                      <path
+                        d="M12.4088 22.7743C18.7491 22.7743 23.9088 17.8389 23.9088 11.7743C23.9088 5.70964 18.7492 0.774292 12.4088 0.774292C6.06843 0.774292 0.908813 5.70964 0.908813 11.7743C0.908813 17.8389 6.06849 22.7743 12.4088 22.7743ZM12.4088 2.24093C17.9058 2.24093 22.3755 6.51625 22.3755 11.7743C22.3755 17.0323 17.9059 21.3077 12.4088 21.3077C6.91177 21.3077 2.44212 17.0323 2.44212 11.7743C2.44212 6.51625 6.91184 2.24093 12.4088 2.24093Z"
+                        fill="#F65600" />
+                      <path
+                        d="M15.7629 15.2796C15.9048 15.3896 16.0734 15.441 16.2421 15.441C16.4682 15.441 16.6906 15.3457 16.84 15.166C17.1046 14.8507 17.0509 14.3887 16.7212 14.1356L13.1754 11.4223V5.90764C13.1754 5.5043 12.8304 5.17432 12.4087 5.17432C11.9871 5.17432 11.6421 5.5043 11.6421 5.90764V11.7743C11.6421 11.998 11.7494 12.207 11.9296 12.3463L15.7629 15.2796Z"
+                        fill="#F65600" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2012_6">
+                        <rect width="23" height="22" fill="white" transform="translate(0.908813 0.774292)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="text-[#000] font-bebas-neue text-[21px] font-normal leading-[120%] mb-2">
+                    Judging will start at 1:30pm
+                  </p>
+                </div>
+              </div>
+              <p class="text-[#7C7C7C] font-jost text-[20px] font-normal leading-[140%] mb-13">
+                Chicken includes Cornish Game Hen and Kosher Chicken.
+              </p>
+              <a href="enter-competition.html"
+                class="flex w-[273px] h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
+                <span class="text-white font-bebas-neue text-[24px] leading-[30px]">ENTER THE COMPETITION</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="w-[588px] h-[660px]  shadow-md border-[1.08px] border-[#E7E7E7] bg-[rgba(255,228,213,0.4)]">
+            <img src="../assets/images/pork.png" alt="Pork Ribs" class="w-full h-[320px] object-cover">
+            <div class="pt-[33px] px-[32px]">
+              <div class="flex justify-between items-center mb-[16px]">
+                <h2 class="text-[#000] font-bebas-neue text-[44px] font-normal leading-[120%]">
+                  PORK RIBS
+                </h2>
+                <div class="flex gap-[10px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <g clip-path="url(#clip0_2012_6)">
+                      <path
+                        d="M12.4088 22.7743C18.7491 22.7743 23.9088 17.8389 23.9088 11.7743C23.9088 5.70964 18.7492 0.774292 12.4088 0.774292C6.06843 0.774292 0.908813 5.70964 0.908813 11.7743C0.908813 17.8389 6.06849 22.7743 12.4088 22.7743ZM12.4088 2.24093C17.9058 2.24093 22.3755 6.51625 22.3755 11.7743C22.3755 17.0323 17.9059 21.3077 12.4088 21.3077C6.91177 21.3077 2.44212 17.0323 2.44212 11.7743C2.44212 6.51625 6.91184 2.24093 12.4088 2.24093Z"
+                        fill="#F65600" />
+                      <path
+                        d="M15.7629 15.2796C15.9048 15.3896 16.0734 15.441 16.2421 15.441C16.4682 15.441 16.6906 15.3457 16.84 15.166C17.1046 14.8507 17.0509 14.3887 16.7212 14.1356L13.1754 11.4223V5.90764C13.1754 5.5043 12.8304 5.17432 12.4087 5.17432C11.9871 5.17432 11.6421 5.5043 11.6421 5.90764V11.7743C11.6421 11.998 11.7494 12.207 11.9296 12.3463L15.7629 15.2796Z"
+                        fill="#F65600" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2012_6">
+                        <rect width="23" height="22" fill="white" transform="translate(0.908813 0.774292)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="text-[#000] font-bebas-neue text-[21px] font-normal leading-[120%]">
+                    Judging will start at 1:30pm
+                  </p>
+                </div>
+              </div>
+              <p class="text-[#7C7C7C] font-jost text-[20px] font-normal leading-[140%] mb-13">
+                Ribs shall include the bone. Country style ribs are prohibited.
+              </p>
+              <a href="enter-competition.html"
+                class="flex w-[273px] h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
+                <span class="text-white font-bebas-neue text-[24px] leading-[30px]">ENTER THE COMPETITION</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="w-[588px] h-[660px]  shadow-md border-[1.08px] border-[#E7E7E7] bg-[rgba(255,228,213,0.4)]">
+            <img src="../assets/images/PORK RIBS.png" alt="Brisket" class="w-full h-[320px] object-cover">
+            <div class="pt-[33px] px-[53px] pb-[69px]">
+              <div class="flex justify-between items-center mb-[16px]">
+                <h2 class="text-[#000] font-bebas-neue text-[44px] font-normal leading-[120%]">
+                  PORK
+                </h2>
+                <div class="flex gap-[10px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <g clip-path="url(#clip0_2012_6)">
+                      <path
+                        d="M12.4088 22.7743C18.7491 22.7743 23.9088 17.8389 23.9088 11.7743C23.9088 5.70964 18.7492 0.774292 12.4088 0.774292C6.06843 0.774292 0.908813 5.70964 0.908813 11.7743C0.908813 17.8389 6.06849 22.7743 12.4088 22.7743ZM12.4088 2.24093C17.9058 2.24093 22.3755 6.51625 22.3755 11.7743C22.3755 17.0323 17.9059 21.3077 12.4088 21.3077C6.91177 21.3077 2.44212 17.0323 2.44212 11.7743C2.44212 6.51625 6.91184 2.24093 12.4088 2.24093Z"
+                        fill="#F65600" />
+                      <path
+                        d="M15.7629 15.2796C15.9048 15.3896 16.0734 15.441 16.2421 15.441C16.4682 15.441 16.6906 15.3457 16.84 15.166C17.1046 14.8507 17.0509 14.3887 16.7212 14.1356L13.1754 11.4223V5.90764C13.1754 5.5043 12.8304 5.17432 12.4087 5.17432C11.9871 5.17432 11.6421 5.5043 11.6421 5.90764V11.7743C11.6421 11.998 11.7494 12.207 11.9296 12.3463L15.7629 15.2796Z"
+                        fill="#F65600" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2012_6">
+                        <rect width="23" height="22" fill="white" transform="translate(0.908813 0.774292)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="text-[#000] font-bebas-neue text-[21px] font-normal leading-[120%] mb-2">
+                    Judging will start at 1:30pm
+                  </p>
+                </div>
+              </div>
+              <p class="text-[#7C7C7C] font-jost text-[20px] font-normal leading-[140%] mb-13">
+                Pork is defined as Boston Butt, Boston Roast, Picnic, Collar (aka Cellar) and/or
+              </p>
+              <a href="enter-competition.html"
+                class="flex w-[273px] h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
+                <span class="text-white font-bebas-neue text-[24px] leading-[30px]">ENTER THE COMPETITION</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="w-[588px] h-[660px]  shadow-md border-[1.08px] border-[#E7E7E7] bg-[rgba(255,228,213,0.4)]">
+            <img src="../assets/images/BEEF BRISKET.png" alt="Ribs" class="w-full h-[320px] object-cover">
+            <div class="pt-[32px] px-[32px] pb-[69px]">
+              <div class="flex justify-between items-center mb-[16px]">
+                <h2 class="text-[#000] font-bebas-neue text-[44px] font-normal leading-[120%]">
+                  BEEF BRISKET
+                </h2>
+                <div class="flex gap-[10px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <g clip-path="url(#clip0_2012_6)">
+                      <path
+                        d="M12.4088 22.7743C18.7491 22.7743 23.9088 17.8389 23.9088 11.7743C23.9088 5.70964 18.7492 0.774292 12.4088 0.774292C6.06843 0.774292 0.908813 5.70964 0.908813 11.7743C0.908813 17.8389 6.06849 22.7743 12.4088 22.7743ZM12.4088 2.24093C17.9058 2.24093 22.3755 6.51625 22.3755 11.7743C22.3755 17.0323 17.9059 21.3077 12.4088 21.3077C6.91177 21.3077 2.44212 17.0323 2.44212 11.7743C2.44212 6.51625 6.91184 2.24093 12.4088 2.24093Z"
+                        fill="#F65600" />
+                      <path
+                        d="M15.7629 15.2796C15.9048 15.3896 16.0734 15.441 16.2421 15.441C16.4682 15.441 16.6906 15.3457 16.84 15.166C17.1046 14.8507 17.0509 14.3887 16.7212 14.1356L13.1754 11.4223V5.90764C13.1754 5.5043 12.8304 5.17432 12.4087 5.17432C11.9871 5.17432 11.6421 5.5043 11.6421 5.90764V11.7743C11.6421 11.998 11.7494 12.207 11.9296 12.3463L15.7629 15.2796Z"
+                        fill="#F65600" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2012_6">
+                        <rect width="23" height="22" fill="white" transform="translate(0.908813 0.774292)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="text-[#000] font-bebas-neue text-[21px] font-normal leading-[120%] mb-2">
+                    Judging will start at 1:30pm
+                  </p>
+                </div>
+              </div>
+              <p class="text-[#7C7C7C] font-jost text-[20px] font-normal leading-[140%] mb-7">
+                May be whole brisket, flat, or point. Corned beef is not allowed. All competition meats shall be
+                inspected by the Official Meat Inspector/Health Department during the times established by the contest
+                organizer.
+              </p>
+              <a href="enter-competition.html"
+                class="flex w-[273px] h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
+                <span class="text-white font-bebas-neue text-[24px] leading-[30px]">ENTER THE COMPETITION</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta-sec competition">
+    <div class="container">
+      <div class="cta !gap-[44px] pt-[91px] ">
+        <div class="cta-text !pt-[33px]">
+          <div class="competition-title mb-[33px]">The <span>competition</span> held on</div>
+          <div class="competition-desc">The competition will be held on the tarmac at the Blackfoot Municipal Airport
+            (McCarley
+            Field).During the competition the area will continue to be an active airport.No guns, fireworks and all
+            fire/flame must be contained within the cooking apparatus.Pets MUST be on a leash or contained at the teams
+            cook site. There is a dog park just outside the airport gate.Vehicles must follow established traffic flow
+            through the airport property. <br> <br>
+            Each team site must have a fire extinguisher and if a stick burner is used some sort of ground protection
+            must be used under the fire box. This may include sheet metal or cement board forexample.</div>
+        </div>
+        <div class="cta-image relative overflow-hidden">
+          <img src="../assets/images/held-on.png" alt="logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta-sec awereness mt-[-11px]">
+    <div class="container">
+      <div class="cta  pt-[91px] ">
+        <div class="cta-text mr-[16px] !pt-[48px] order-2">
+          <div class="competition-title mb-[37px]">The<span>competition</span>awareness</div>
+          <div class="competition-desc">Fire lanes and emergency access shall be maintained at all times.Ashes and
+            grease must be disposed of in provided containers located close to the cook sites. Team site will be left
+            with no garbage, ashes, debris or liquid/grease spills. If site is not left in a Clean manner the city will
+            clean the site and bill the team for the labor involved.
+            <br> <br>
+            All teams equipment, vehicles, trailers, cookers, awnings etc. must stay within teams assigned cook area. A
+            parking area will be available nearby for vehicles that don’t fit within cook site.Water will be available
+            as well as gray water disposal area. Electricity will not be provided. Please plan accordingly Each cook
+            site will have a brief health department inspection along with their meat inspection.
+          </div>
+        </div>
+        <div class="cta-image-after  order-1">
+          <img src="../assets/images//awereness.png" alt="logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="when-where pt-[100px] pb-[16px] relative">
+    <div class="container">
+      <div class="flex justify-between gap-[85px] relative pt-[20px]">
+
+        <!-- Left Box -->
+        <div
+          class="absolute ml-[-125px] w-[733px] h-[161px] bg-[#591419] flex gap-[61px] items-center justify-center py-6 mt-[-30px] when-clip-path">
+
+          <!-- WHEN -->
+          <div class="flex flex-col text-center">
+            <h4 class="text-[#FFE4D5] font-bebas-pro text-[48px] font-bold leading-normal tracking-[0.96px] uppercase">
+              WHEN
+            </h4>
+            <h5 class="text-[#FFE4D5] font-bebas-pro text-[26px] font-bold leading-normal tracking-[0.38px] uppercase">
+              June 28-29, 2025
+            </h5>
+          </div>
+
+          <!-- WHERE -->
+          <div class="flex flex-col text-center">
+            <h4 class="text-[#FFE4D5] font-bebas-pro text-[48px] font-bold leading-normal tracking-[0.96px] uppercase">
+              WHERE:
+            </h4>
+            <h5 class="text-[#FFE4D5] font-bebas-pro text-[19px] font-bold leading-normal tracking-[0.38px] uppercase">
+              Blackfoot, Idaho <br>
+              <span
+                class="text-[#FFE4D5]  mx-auto text-center font-bebas-pro text-[19px] font-medium leading-normal tracking-[0.38px] uppercase">
+                Blackfoot Airport (McCarly Field)</span>
+            </h5>
+          </div>
+        </div>
+
+        <!-- Right Text -->
+        <div
+          class="ml-auto text-black text-right font-jost text-[19px] font-normal leading-normal tracking-[0.38px] max-w-[500px]">
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Pellentesque lectus pulvinar cras cursus parturient in.
+            Vitae risus nisi scelerisque iaculis feugiat vel ornare nec. Hendrerit nullam eu nisl arcu.
+            Phasellus a tincidunt diam interdum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-sec items">
+    <div class="container">
+      <div class="cta  pt-[91px] ">
+        <div class="cta-text !pt-[74px]">
+          <div class="competition-title !leading-[65px] mb-[10px]"><span>The items</span> they are looking for are</div>
+          <div class="flex flex-col gap-[13px]">
+
+            <div class="flex items-center gap-3">
+              <!-- Circle with tick -->
+              <div
+                class="w-[25px] h-[25px] flex items-center justify-center rounded-full bg-[#E9680C] text-white text-lg">
+                <i class="ri-check-fill"></i>
+              </div>
+              <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
+                Three separate bins or basins for dishwashing (wash, rinse and sterilise) They can be as simple as
+                rubbermaid bins.
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <!-- Circle with tick -->
+              <div
+                class="w-[25px] h-[25px] flex items-center justify-center rounded-full bg-[#E9680C] text-white text-lg">
+                <i class="ri-check-fill"></i>
+              </div>
+              <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
+                A basin for Clorox water for wiping down surfaces
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <!-- Circle with tick -->
+              <div
+                class="w-[25px] h-[25px] flex items-center justify-center rounded-full bg-[#E9680C] text-white text-lg">
+                <i class="ri-check-fill"></i>
+              </div>
+              <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
+                Clorox
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <!-- Circle with tick -->
+              <div
+                class="w-[25px] h-[25px] flex items-center justify-center rounded-full bg-[#E9680C] text-white text-lg">
+                <i class="ri-check-fill"></i>
+              </div>
+              <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
+                An area with fresh water and soap for handwashing with hand soap and paper towels
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <!-- Circle with tick -->
+              <div
+                class="w-[25px] h-[25px] flex items-center justify-center rounded-full bg-[#E9680C] text-white text-lg">
+                <i class="ri-check-fill"></i>
+              </div>
+              <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
+                Meat thermometer
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <!-- Circle with tick -->
+              <div
+                class="w-[25px] h-[25px] flex items-center justify-center rounded-full bg-[#E9680C] text-white text-lg">
+                <i class="ri-check-fill"></i>
+              </div>
+              <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
+                Your meat will need to be on ice with a fridge thermometer. It must read
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <!-- Circle with tick -->
+              <div
+                class="w-[25px] h-[25px] flex items-center justify-center rounded-full bg-[#E9680C] text-white text-lg">
+                <i class="ri-check-fill"></i>
+              </div>
+              <p class="text-black font-jost text-[16px] font-normal leading-normal tracking-[0.32px]">
+                Disposable gloves
+              </p>
+            </div>
+          </div>
+          <div class="competition-desc"></div>
+        </div>
+        <div class="cta-image relative overflow-hidden">
+          <img src="../assets/images/held-on.png" alt="logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mt-26 h-[349px] relative  z-10">
+    <div class="container ">
+      <div class="flex justify-between h-full ">
+
+        <!-- Left Colored Bars -->
+        <div class="h-[349px] gap-[10px] flex">
+          <!-- First Box -->
+          <div
+            class="relative w-[157px] h-[349px] bg-[#16396F] text-white font-bebas-pro font-bold text-[48px] uppercase tracking-[0.96px] flex items-center justify-center clip-kidsq overflow-hidden">
+            <span class="absolute mt-[250px] ml-[114px] rotate-[282deg] whitespace-nowrap origin-bottom-left">
+              KIDS-Q
+            </span>
+          </div>
+
+
+          <!-- Second Box -->
+          <div
+            class="w-[150px] bg-[#F65600] text-white font-bebas-pro font-bold text-[48px] uppercase tracking-[0.96px] flex absolute ml-[106px] h-full clip-kidsq">
+            <span class="mt-[255px] ml-[99px] rotate-[281deg] whitespace-nowrap origin-bottom-left">
+              SATURDAY JUNE 29TH
+            </span>
+          </div>
+
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="date w-[984px] h-[349px] bg-[#FFE4D5] px-8 py-6 md:py-18 md:px-[136px] relative">
+          <div class="hero-inner  gap-[10px] absolute -top-[50px] left-1/2 -translate-x-1/2">
+            <div class="brand-title-2">Smoke-N-Wings</div>
+            <div class="brand-title-2">Smoke-N-Wings</div>
+            <div class="brand-title-2">Smoke-N-Wings</div>
+          </div>
+
+          <h3 class="text-[#591419] font-bebas-pro text-[48px] font-bold leading-none tracking-[0.96px] uppercase mb-2">
+            FRIDAY JUNE 28, 2024
+          </h3>
+
+          <div class="w-[155px] h-[9px] bg-[#3B0E0E] mb-"></div>
+
+          <h4
+            class="text-[#000000] mt-[26px] font-bebas-pro text-[22px] font-bold leading-none tracking-[0.52px] uppercase mb-1">
+            BINGHAM COUNTY MAYORS SCHOLARSHIP FUNDRAISER
+          </h4>
+
+          <div
+            class="text-[#000000] w-[761px] mt-[17px] font-jost text-[19px] font-normal leading-normal tracking-[0.38px]">
+            <p>
+              Friday June 28, 2024 from 5-7pm — Community invited to enjoy BBQ, Kids-Q activities and an auction to
+              benefit
+              the high school seniors of Bingham County through the Bingham County Mayors Scholarship. Come and help
+              support
+              a wonderful cause.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <section class="cta-sec responsibility pb-[96px]">
+    <div class="max-w-[1226px] mx-auto">
+      <div class="cta  pt-[91px] ">
+        <div class="cta-text !w-[50%] mr-[16px] !pt-[37px] order-2">
+          <div class="competition-title  mb-[37px]">contestant's <span>responsibility</span></div>
+          <div class="competition-desc">Neither the City of Blackfoot, McCarley Field nor the event organizers will be
+            responsible for any injury, loss or damage that may occur to the contestants or the contestant’s property
+            from any cause whatsoever. It is the contestant’s responsibility to protect equipment and space sothat no
+            injury will result to the public, visitors, guests or persons or property.Cancellation and Refunds – A team
+            may cancel up to 1 month (May 28 th ) prior to the event with full refund of site fee. Cancellations after
+            May 28 th fill forfeit fees paid.
+          </div>
+        </div>
+        <div class="cta-image-after2 ml-[-11px] order-1">
+          <img src="../assets/images/contestant.png" alt="logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-[#16396F]">
+    <div class="container">
+      <div class="flex justify-between gap-[129px] pt-[45px]">
+        <div class="max-w-[695px]">
+          <div class="text-[#FFE4D5] font-bebas-pro text-[115px] font-bold leading-[102px] tracking-[2.3px] uppercase">
+            Smoke-N-Wings
+            <span
+              class="text-[#F65600] font-bebas-pro text-[115px] font-bold leading-[102px] tracking-[2.3px] uppercase">
+              BBQ</span> Competition
+          </div>
+        </div>
+        <div class="max-w-[367px] mt-[24px]">
+          <ul class="hidden sm:flex">
+            <li>
+              <a href="enter-competition.html" class="enter-btn !px-[119px] font-bebas-pro">Enter Competition</a>
+            </li>
+          </ul>
+          <div class="flex gap-[98px]">
+                        <ul
+                            class="flex flex-col  gap-[14px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] py-10">
+                            <li><a href="rules.html">Rules</a>
+                            </li>
+                            <li><a href="sponsors.html">Sponsors</a></li>
+                            <li><a href="kids-q.html">Kids-Q</a></li>
+                        </ul>
+                        <ul
+                            class="flex flex-col  gap-[18px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] py-10">
+                            <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="border-t border-[#FFFFFF] mx-auto w-[1334px] ml-[-70px] h-[2px] mt-[-9px]" />
+
+      <div class="flex justify-center items-center pt-[20px]">
+        <div
+          class="text-[#FFE4D5] font-jost text-[15px] font-normal leading-normal tracking-[0.3px] uppercase text-center">
+          © copyright 2025 smoke-n-wings.com. All rights reserved.
+        </div>
+      </div>
+
+  </footer>
+
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

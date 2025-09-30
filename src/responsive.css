@@ -1,0 +1,208 @@
+@media only screen and (max-width: 1199px) {
+  /* hero */
+  .brand-title {
+    font-size: clamp(48px, 16vw, 247px);
+  }
+
+  /* cta-sec */
+
+  .cta-title {
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .cta-title span {
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .cta-image {
+    margin-right: 0px;
+  }
+
+  /* when-where */
+  /* courses */
+  /* date-sec */
+  /* cta-sec-2 */
+  /* footer */
+}
+
+@media only screen and (max-width: 1068px) {
+  /* hero */
+  .enter-left {
+    left: 0px;
+    font-size: 40px;
+    padding: 15px 67px;
+  }
+
+  .enter-right {
+    right: 0px;
+    font-size: 40px;
+    padding: 16px 67px 16px 67px;
+  }
+
+  .brand-title {
+    font-size: clamp(48px, 16vw, 247px);
+  }
+  /* cta-sec */
+  .cta-image::before {
+    width: 114px;
+    height: 46%;
+    clip-path: polygon(0 0, 32% 75%, 55% 0);
+  }
+  .cta {
+    gap: 20px;
+  }
+  /* when-where */
+  /* courses */
+  /* date-sec */
+  /* cta-sec-2 */
+  /* footer */
+}
+
+@media only screen and (max-width: 991px) {
+  /* hero */
+  .enter-left {
+    left: 130px;
+    font-size: 30px;
+    padding: 15px 67px;
+  }
+
+  .enter-right {
+    right: 130px;
+    margin-top: 160px;
+    font-size: 30px;
+    padding: 16px 64px 16px 64px;
+  }
+
+  .brand-title {
+    font-size: clamp(48px, 18vw, 247px);
+  }
+  /* cta-sec */
+  .cta-title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .cta-title span {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .cta-image::before {
+    left: 11px;
+    width: 80px;
+    height: 50%;
+    clip-path: polygon(0 0, 34% 72%, 60% 0);
+  }
+  .cta {
+    gap: 10px;
+  }
+  /* when-where */
+  /* courses */
+  /* date-sec */
+  /* cta-sec-2 */
+  /* footer */
+}
+@media only screen and (max-width: 768px) {
+  /* hero */
+
+  .enter-left {
+    clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+    font-size: 28px;
+  }
+  .enter-right {
+    clip-path: polygon(5% 0, 100% 0%, 100% 99%, 0% 100%);
+    font-size: 28px;
+  }
+
+  /* cta-sec */
+  .cta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cta-title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+  .cta-title span {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
+  .cta-desc {
+    font-size: 16px;
+    letter-spacing: 0.33px;
+    padding-top: 20px;
+  }
+
+  .cta-image::before {
+    width: 130px;
+  }
+  .cta-text {
+    width: 100%;
+  }
+
+  .cta-image img {
+    height: 417px;
+  }
+  /* when-where */
+  /* courses */
+  /* date-sec */
+  /* cta-sec-2 */
+  /* footer */
+}
+@media only screen and (max-width: 600px) {
+  /* hero */
+  .hero {
+    height: 530px;
+  }
+  .enter-left {
+    font-size: 18px;
+  }
+
+  .enter-right {
+    font-size: 18px;
+  }
+  /* cta-sec */
+  .cta-image::before {
+    width: 86px;
+  }
+  /* when-where */
+  /* courses */
+  /* date-sec */
+  /* cta-sec-2 */
+  /* footer */
+}
+@media only screen and (max-width: 400px) {
+  /* hero */
+  .enter-left {
+    left: 80px;
+    padding: 15px 67px;
+  }
+
+  .enter-right {
+    right: 63px;
+    margin-top: 160px;
+    padding: 16px 64px 16px 64px;
+  }
+  /* cta-sec */
+  .cta-title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+  }
+  .cta-title span {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+  }
+  .cta-image::before {
+    width: 50px;
+  }
+  /* when-where */
+  /* courses */
+  /* date-sec */
+  /* cta-sec-2 */
+  /* footer */
+}

@@ -1,0 +1,148 @@
+.sub-title {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.txt {
+  color: #fff;
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+/* horizontal divider */
+.divider {
+  width: 1px;
+  height: 17px;
+  opacity: 1;
+  background: #fff;
+}
+
+.banner-title {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
+.menu-title {
+  color: #16396f;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 81px; /* 135% */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.menu-title span {
+  color: #f65600;
+}
+
+.menu-desc {
+  max-width: 729px;
+  margin: 0 auto;
+  color: #000;
+  text-align: center;
+  /* font-family: "Jost", sans-serif; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  letter-spacing: 0.36px;
+}
+
+.menu-join-smoke {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  color: var(--brand-color-smoke-rgba);
+  font-size: clamp(48px, 11vw, 247px);
+  mix-blend-mode: multiply;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.competition-title {
+  color: #16396f;
+  font-family: "Bebas Neue";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 81px; /* 135% */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.competition-title span {
+  color: #f65600;
+}
+
+.competition-desc {
+  color: #000;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+/* /////bhingam Page///// */
+
+.btn-overlay {
+  position: relative;
+}
+.btn-overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97px;
+  height: 100%;
+  background: #591419;
+  z-index: 2;
+  pointer-events: none;
+  clip-path: polygon(0 0, 0% 100%, 36% 0);
+}
+.btn-overlay2 {
+  position: relative;
+}
+.btn-overlay2:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  width: 92px;
+  height: 84%;
+  background: #591419;
+  z-index: 2;
+  pointer-events: none;
+ clip-path: polygon(100% 0, 72% 0, 100% 100%);
+}
+
+
+
+.bg-form {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('../assets/images/form-bg.png') no-repeat center;
+  background-size: cover;
+}
