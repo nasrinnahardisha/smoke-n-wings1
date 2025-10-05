@@ -5,82 +5,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/title-logo.png" type="image/png">
-    <title>Smoke-N-Wings</title>
+    <title>Smoke-N-Wings || ENter-Competition</title>
     <link rel="stylesheet" href="../assets/css/slick.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="../src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="../src/style.css" />
     <link rel="stylesheet" href="../src/rules.css" />
+    <link rel="stylesheet" href="../src/responsive.css">
 </head>
 
 <body>
-    <header class="w-full  pt-[4px] bg-[#fff] z-50 py-0 px-[30px] xl:px-[15px]">
-        <div class="max-w-[1225px] mx-auto flex items-center justify-between">
-            <div class="logo">
-                <a href="index.html" class="standard-logo">
-                    <img src="../assets/images/logo.jpg" alt="standard-logo">
-                </a>
-                <a href="index.html" class="sticky-logo">
-                    <img src="../images/logo.jpg" alt="sticky-logo">
-                </a>
-            </div>
-            <div class="flex items-center">
-                <nav id="nav-links" class="hidden lg:flex">
-                    <ul
-                        class="nav__links flex items-center gap-[20px] lg:gap-[34px] text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#000] py-10">
+  <header class="w-full  pt-[4px] bg-[#fff] z-50 py-0 px-[30px] xl:px-[15px]">
+    <div class="max-w-[1225px] mx-auto flex items-center justify-between">
+      <div class="logo">
+        <a href="index.html" class="standard-logo">
+          <img src="../assets/images/logo.jpg" alt="standard-logo">
+        </a>
+        <a href="index.html" class="sticky-logo">
+          <img src="../images/logo.jpg" alt="sticky-logo">
+        </a>
+      </div>
+      <div class="flex items-center">
+        <nav id="nav-links" class="hidden lg:flex">
+          <ul
+            class="nav__links flex items-center gap-[20px] lg:gap-[34px] text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#000] py-10">
+            <li><a href="rules.html">Rules</a>
+            </li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="kids-q.html">Kids-Q</a></li>
+             <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="hidden sm:flex mr-[8px]">
+        <li>
+             <a href="enter-competition.html" class="enter-btn font-bebas-pro">Enter Competition</a>
+        </li>
+      </ul>
+
+
+      <div class="flex sm:hidden items-center gap-4">
+        <button id="menu-toggle" aria-label="Open menu" class="focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 51 51" fill="none">
+            <circle cx="25.5" cy="25.5" r="25.5" fill="#F65600" />
+            <path d="M25 21L35 21" stroke="white" stroke-width="2" />
+            <path d="M15 28L35 28" stroke="white" stroke-width="2" />
+          </svg>
+        </button>
+
+        <button id="menu-close" aria-label="Close menu" class="hidden focus:outline-none text-[#F65600] text-4xl">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <nav id="mobile-nav"
+        class="flex opacity-0 translate-x-0 fixed top-[78px] right-0 h-screen w-[350px] bg-[#FFE4D5] p-6 shadow-lg z-50 sm:hidden transition-all duration-500 ease-in-out">
+        <ul class="flex flex-col   gap-10 text-[18px] font-bold leading-[20px] text-[#031F42]">
                         <li><a href="rules.html">Rules</a>
                         </li>
                         <li><a href="sponsors.html">Sponsors</a></li>
                         <li><a href="kids-q.html">Kids-Q</a></li>
                         <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <ul class="hidden sm:flex mr-[8px]">
-                <li>
-                    <a href="enter-competition.html" class="enter-btn font-bebas-pro">Enter Competition</a>
-                </li>
-            </ul>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
 
 
-            <div class="flex sm:hidden items-center gap-4">
-                <button id="menu-toggle" aria-label="Open menu" class="focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 51 51" fill="none">
-                        <circle cx="25.5" cy="25.5" r="25.5" fill="#F65600" />
-                        <path d="M25 21L35 21" stroke="white" stroke-width="2" />
-                        <path d="M15 28L35 28" stroke="white" stroke-width="2" />
-                    </svg>
-                </button>
-
-                <button id="menu-close" aria-label="Close menu"
-                    class="hidden focus:outline-none text-[#F65600] text-4xl">
-                    <i class="ri-close-line"></i>
-                </button>
-            </div>
-
-            <nav id="mobile-nav"
-                class="flex opacity-0 translate-x-0 fixed top-[78px] right-0 h-screen w-[350px] bg-[#FFE4D5] p-6 shadow-lg z-50 sm:hidden transition-all duration-500 ease-in-out">
-                <ul class="flex flex-col   gap-10 text-[18px] font-bold leading-[20px] text-[#031F42]">
-                        <li><a href="rules.html">Rules</a>
-                        </li>
-                        <li><a href="sponsors.html">Sponsors</a></li>
-                        <li><a href="kids-q.html">Kids-Q</a></li>
-                        <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </header>
-
-
-    <section class="banner  mt-[13px] relative">
+    <section class="banner  mt-0  xl:mt-[13px] relative">
         <div class="bg-[#591419] relative z-10">
-            <div class="flex justify-center items-center pt-[60px] pb-[45px]">
-                <div class="absolute top-0 right-0 h-full w-[552px] bg-[#F65600] z-20"
-                    style="    clip-path: polygon(100% 0, 100% 100%, 58% 100%, 38% 65%, 0 0);">
+            <div class="flex justify-center items-center pt-[40px] xl:pt-[60px] pb-[40px] xl:pb-[45px]">
+               <div class="absolute bg-clip top-0 right-0 h-full w-[230px] xl:w-[552px] bg-[#F65600] z-20">
                 </div>
                 <div class="flex relative z-30 flex-col items-center gap-[18px] ">
                     <div class="sub-title">
@@ -88,7 +87,7 @@
                         <div class="divider" aria-hidden="true"></div>
                         <div class="txt">Enter</div>
                     </div>
-                    <div class="banner-title">
+                    <div class="banner-title text-center">
                         <h2>ENTER COMPETITION</h2>
                     </div>
                 </div>
@@ -99,44 +98,44 @@
 
     <section class="cta-sec bigham pt-[44px]">
         <div class="container relative z-1">
-            <div class="hero-inner  ml-[328px] mt-[-5px]  absolute -top-[50px] left-1/2 -translate-x-1/2">
+            <div class="hero-inner hidden xl:block  ml-[328px] mt-[-5px]  absolute -top-[50px] left-1/2 -translate-x-1/2">
                 <div class="brand-title-2 BARBEQUE2 !text-[146px] !h-[160px]">BARBEQUE</div>
             </div>
 
-            <div class="cta !gap-[30px] pt-[65px] ">
-                <div class="cta-text !pt-0">
-                    <div class="competition-title  mb-[17px]">Enter Competition</div>
+            <div class="cta !gap-[30px] xl:pt-[65px] lg:pt-[40px] md:pt-[30px] sm:pt-[10px] pt-0">
+                <div class="w-full md:w-1/2 xl:w-[485px] !pt-0">
+                    <div class="competition-title  xl:mb-[17px] md:mb-[10px] mb-[8px]">Enter Competition</div>
                     <div class="competition-desc">We are excited to welcome your team to the 2024 SMOKE-N-WINGS BBQ
                         CONTEST. Put your skills to the test for your chance to win cash prizes and be crowned the
                         SMOKE-N-WINGS Grand Champion and the Idaho State Champion.
-                        <br><br>
+                        <br> <br class="hidden md:block">
                         This KCBS sanctioned competition will be held June 28-29, 2024. Winning will make your team
                         eligible for the American Royal and the Jack Daniels World Championship. 
                     </div>
-                    <div class="flex flex-col gap-[36px] mt-[35px]">
+                    <div class="flex flex-col xl:gap-[36px] md:gap-[24px] sm:gap-[18px] gap-[10px] xl:mt-[35px] md:mt-[25px] mt-[15px]">
                         <div
-                            class="btn-overlay2 flex items-center w-[492px] h-[99px] bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[24px] font-normal pl-[10px] pr-[23px]">
+                            class="btn-overlay2 flex items-center w-full max-w-full xl:max-w-[485px] xl:h-[99px] h-auto bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[20px] xl:text-[24px] font-normal pl-[10px] pr-[23px]">
 
-                            <div class="w-[74px] h-[74px] bg-[#16396F] flex items-center justify-center">
-                                <i class="ri-mail-lock-line text-white text-[36px]"></i>
+                            <div class="xl:w-[74px] md:w-[65px] w-[56px] h-[56px] md:h-[65px] xl:h-[74px] bg-[#16396F] flex items-center justify-center">
+                                <i class="ri-mail-lock-line text-white text-[24px] md:text-[30px] xl:text-[36px]"></i>
                             </div>
 
                             <span class="ml-[22px] leading-[81px]">smokenwingsbbq@gmail.com</span>
                         </div>
                         <div
-                            class="btn-overlay2 flex items-center w-[492px] h-[99px] bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[24px] font-normal pl-[13px] pr-[23px]">
+                            class="btn-overlay2 flex items-center w-full max-w-full xl:max-w-[485px] xl:h-[99px] h-auto bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[24px] font-normal pl-[13px] pr-[23px]">
 
-                            <div class="w-[74px] h-[74px] bg-[#16396F] flex items-center justify-center">
-                                <i class="ri-calendar-2-line text-white text-[36px]"></i>
+                            <div class="xl:w-[74px] md:w-[65px] w-[56px] h-[56px] md:h-[65px] xl:h-[74px] bg-[#16396F] flex items-center justify-center">
+                                <i class="ri-calendar-2-line text-white text-[24px] md:text-[30px] xl:text-[36px]"></i>
                             </div>
 
                             <span class="ml-[22px] leading-[81px]">Mon - Fri 09:00 - 18:00</span>
                         </div>
                         <div
-                            class="btn-overlay2 flex items-center w-[492px] h-[99px] bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[24px] font-normal pl-[13px] pr-[23px]">
+                            class="btn-overlay2 flex items-center w-full max-w-full xl:max-w-[485px] xl:h-[99px] h-auto bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[24px] font-normal pl-[13px] pr-[23px]">
 
-                            <div class="w-[74px] h-[74px] bg-[#16396F] flex items-center justify-center">
-                                <i class="ri-phone-fill text-white text-[36px]"></i>
+                            <div class="xl:w-[74px] md:w-[65px] w-[56px] h-[56px] md:h-[65px] xl:h-[74px] bg-[#16396F] flex items-center justify-center">
+                                <i class="ri-phone-fill text-white text-[24px] md:text-[30px] xl:text-[36px]"></i>
                             </div>
 
                             <span class="ml-[22px] leading-[81px]">Call (800) 123 45 67</span>
@@ -146,18 +145,18 @@
                     </div>
                 </div>
                 <form
-                    class="bg-[#fff] shadow-[-12px_49px_94px_0_rgba(85,89,90,0.05)] w-[591px] h-auto px-[30px] pt-[24px] pr-[50px] z-2">
+                    class="bg-[#fff] shadow-[-12px_49px_94px_0_rgba(85,89,90,0.05)] w-full md:w-1/2 xl:w-[591px] h-auto  px-[10px] md:px-[30px] pt-[15px] md:pt-[20px] xl:pt-[24px] pr-auto xl:pr-[50px] z-2">
 
                     <!-- Title -->
                     <h2
-                        class="text-[#16396F] font-bebas-neue text-[38px] font-normal leading-[81px] tracking-[0.76px] uppercase mb-[10px]">
+                        class="text-[#16396F] font-bebas-neue text-[32px] md:text-[38px] font-normal xl:leading-[81px] leading-[50px] md:tracking-[0.76px] tracking-[0.65px]  uppercase mb-[10px]">
                         Complete the <span class="text-[#F65600]">Entry Form</span>Below
                     </h2>
 
                     <!-- First Row: Name & Email -->
-                    <div class="flex gap-[30px] mb-[22px]">
+                    <div class="flex lg:flex-row flex-col gap-[15px] lg:gap-[30px] mb-[18px] md:mb-[22px]">
                         <!-- Team Name -->
-                        <div class="flex flex-col w-1/2 relative">
+                        <div class="flex flex-col w-full lg:w-1/2 relative">
                             <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[6px]">Team name</label>
                             <input type="text" class="h-[48px] border border-gray-300 px-3 pr-10 !rounded-none w-full"
                                 placeholder="Enter team name" />
@@ -168,7 +167,7 @@
                         </div>
 
                         <!-- Email -->
-                        <div class="flex flex-col w-1/2 relative">
+                        <div class="flex flex-col w-full lg:w-1/2 relative">
                             <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[6px]">Email</label>
                             <input type="email" class="h-[48px] border border-gray-300 px-3 pr-10 !rounded-none w-full"
                                 placeholder="you@company.com" />
@@ -180,7 +179,7 @@
                     </div>
 
                     <!-- Second Row: Head Cook -->
-                    <div class="flex flex-col mb-[22px] relative">
+                    <div class="flex flex-col mb-[18px] md:mb-[22px] relative">
                         <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[4px]">Head Cook</label>
                         <input type="text" class="w-full h-[48px] border border-gray-300 px-3 pr-10 !rounded-none"
                             placeholder="Head Cook" />
@@ -189,9 +188,9 @@
                     </div>
 
                     <!-- address + phone -->
-                    <div class="flex gap-[30px] mb-[22px]">
+                    <div class="flex lg:flex-row flex-col gap-[15px] lg:gap-[30px] mb-[18px] md:mb-[22px]">
                         <!-- Address -->
-                        <div class="flex flex-col w-1/2 relative">
+                        <div class="flex flex-col w-full lg:w-1/2 relative">
                             <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[4px]">Address</label>
                             <input type="text" class="h-[48px] border border-gray-300 px-3 pr-10 !rounded-none w-full"
                                 placeholder="Enter your address" />
@@ -200,7 +199,7 @@
                         </div>
 
                         <!-- Phone -->
-                        <div class="flex flex-col w-1/2 relative">
+                        <div class="flex flex-col w-full lg:w-1/2 relative">
                             <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[4px]">Phone Number</label>
                             <input type="text" class="h-[48px] border border-gray-300 px-3 pr-10 !rounded-none w-full"
                                 placeholder="Enter your phone number" />
@@ -210,9 +209,9 @@
                     </div>
 
                     <!-- member -->
-                    <div class="flex gap-[30px] mb-[22px]">
+                    <div class="flex lg:flex-row flex-col gap-[15px] lg:gap-[30px] mb-[18px] md:mb-[22px]">
                         <!-- KCBS Member -->
-                        <div class="flex flex-col w-1/2 relative">
+                        <div class="flex flex-col w-full lg:w-1/2 relative">
                             <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[4px]">
                                 Are you a KCBS Member?
                             </label>
@@ -223,7 +222,7 @@
                         </div>
 
                         <!-- Phone Number -->
-                        <div class="flex flex-col w-1/2 relative">
+                        <div class="flex flex-col w-full lg:w-1/2 relative">
                             <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[4px]">
                                 Head Cook KCBS Number
                             </label>
@@ -237,14 +236,14 @@
 
 
                     <!-- Competition Rules -->
-                    <div class="bg-[#FFF4EE] flex flex-col items-start p-[22px_18px] gap-[15px] h-[125px] w-full mt-21">
+                    <div class="bg-[#FFF4EE] flex flex-col items-start p-[22px_18px] gap-[15px] h-auto xl:h-[125px] w-full mt-[18px] md:mt-10 xl:mt-21">
                         <!-- Text -->
                         <p class="text-[#16396F] font-jost text-[16px] font-semibold leading-[24px] tracking-[0.32px]">
                             I have read and agree to the smoke-n-wings Competition Rules
                         </p>
-                        <div class="flex gap-[12px] mb-[22px] w-full">
+                        <div class="flex lg:flex-row flex-col gap-[12px] xl:mb-[22px] mb-0 w-full">
                             <!-- Team Name -->
-                            <div class="flex flex-col h-[40px] w-1/2 ">
+                            <div class="flex flex-col h-[40px] w-full lg:w-1/2">
                                 <div class="h-[48px] flex items-center gap-2 bg-[#fff] px-3 pr-10 !rounded-none w-full">
                                     <input type="checkbox" name="agree" class="form-checkbox h-3 !w-3 text-blue-500"
                                         onclick="this.checked ? document.getElementById('noCheckbox').checked=false : null"
@@ -253,7 +252,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex flex-col h-[40px] w-1/2 ">
+                            <div class="flex flex-col h-[40px] w-full lg:w-1/2">
                                 <div class="h-[48px] flex items-center gap-2 bg-[#fff] px-3 pr-10 !rounded-none w-full">
                                     <input type="checkbox" name="agree" class="form-checkbox h-3 !w-3 text-blue-500"
                                         onclick="this.checked ? document.getElementById('yesCheckbox').checked=false : null"
@@ -264,9 +263,9 @@
 
                         </div>
                     </div>
-                
+
                     <!-- Competition Rules2 -->
-                    <div class="bg-[#FFF4EE] flex flex-col items-start p-[22px_18px] gap-[15px] w-full mt-6">
+                    <div class="bg-[#FFF4EE] flex flex-col items-start p-[22px_18px] gap-[15px] w-full mt-[18px] xl:mt-6">
                         <!-- Text -->
                         <p class="text-[#16396F] font-jost text-[16px] font-semibold leading-[24px] tracking-[0.32px]">
                             TO HELP US PROMOTE THIS EVENT AND OUR FUNDRAISER TO THE PUBLIC, MY TEAM WOULD LIKE TO SERVE
@@ -298,7 +297,7 @@
                     </div>
                     <!-- Competition Rules 3-->
 
-                    <div class="bg-[#FFF4EE] flex flex-col items-start p-[22px_18px] gap-[15px] w-full mt-6">
+                    <div class="bg-[#FFF4EE] flex flex-col items-start p-[22px_18px] gap-[15px] w-full mt-[18px] xl:mt-6">
                         <!-- Text -->
                         <p class="text-[#16396F] font-jost text-[16px] font-semibold leading-[24px] tracking-[0.32px]">
                             MY TEAM WOULD BE WILLING TO MENTOR AN OLDER DIVISION KIDS-Q CONTESTANT FOR 30 MINUTES
@@ -310,7 +309,7 @@
                                 class="flex flex-col h-[40px] text-[#000] font-jost text-[11px] font-semibold leading-normal tracking-[0.24px]">
                                 <div class="h-[48px] flex items-center gap-2 bg-[#fff] px-3  !rounded-none w-full">
                                     <input type="checkbox" name="agree" class="form-checkbox h-3 !w-3 text-blue-500"
-                                         onclick="this.checked ? document.getElementById('noCheckbox3').checked=false : null"
+                                        onclick="this.checked ? document.getElementById('noCheckbox3').checked=false : null"
                                         id="yesCheckbox3">
                                     <span>YES – MY TEAM WOULD LOVE TO HELP A KID PREPARE FOR THE KIDS-Q</span>
                                 </div>
@@ -320,7 +319,7 @@
                                 <div
                                     class="h-[48px] flex items-center gap-2 bg-[#fff] px-3 pr-10 !rounded-none w-full text-[#000] font-jost text-[12px] font-semibold leading-normal tracking-[0.24px]">
                                     <input type="checkbox" name="agree" class="form-checkbox h-3 !w-3 text-blue-500"
-                                         onclick="this.checked ? document.getElementById('yesCheckbox3').checked=false : null"
+                                        onclick="this.checked ? document.getElementById('yesCheckbox3').checked=false : null"
                                         id="noCheckbox3">
                                     <span>No</span>
                                 </div>
@@ -331,7 +330,7 @@
 
 
                     <!-- Power Source -->
-                    <div class="mt-6">
+                    <div class="mt-[18px] xl:mt-6">
                         <label
                             class="flex items-start gap-2 text-[#000] font-jost text-[11px] font-semibold leading-normal tracking-[0.24px]">
                             <input type="checkbox" class="h-3 !w-3 accent-[#16396F] mt-1">
@@ -343,60 +342,134 @@
 
                     <!-- Button -->
                     <button
-                        class="w-full mt-[36px] h-[48px] bg-[#16396F] text-white text-lg font-semibold !rounded-none">
+                        class="w-full mt-[18px] xl:mt-[36px] h-[48px] bg-[#16396F] text-white text-lg font-semibold !rounded-none">
                         Send Message
                     </button>
                 </form>
             </div>
 
-            <div class="pt-[160px] pb-[115px]">
-                <div class="image-card flex flex-col gap-[50px]">
-                    <div class="single-img1 w-[1176px] justify-between h-[317px] flex border border-[#E7E7E7] bg-white flex-shrink-0">
+            <div class="xl:pt-[160px] lg:pt-[70px] md:pt-[60px] pt-[30px] xl:pb-[115px] lg:pb-[70px] md:pb-[60px] pb-[30px]">
+                <div class="image-card flex flex-col w-full gap-[20px] md:gap-[30px] xl:gap-[50px]">
+                    <div
+                        class="single-img1 w-full max-w-[1176px] justify-between h-auto xl:h-[317px] flex  flex-col md:flex-row border border-[#E7E7E7] bg-white flex-shrink-0">
                         <!-- Left Image -->
-                        <div class="w-[545px] h-[317px]">
+                        <div class="md:max-w-[400px] xl:max-w-[545px] max-w-full w-full h-auto  xl:h-[317px]">
                             <img src="./assets/images/single-card-img1.png" alt="Card Image"
                                 class="w-full h-full object-cover" />
                         </div>
 
                         <!-- Right Content -->
-                        <div class="flex-1 flex flex-col justify-between pt-[45px] pb-[48px] pl-[47px] pr-[56px]">
+                        <div class="flex-1 flex flex-col justify-between md:pt-[35px] pt-[24px] xl:pt-[45px] pb-[24px] md:pb-[36px] xl:pb-[48px]  pl-auto xl:pl-[47px] pr-auto xl:pr-[56px] px-[15px] md:px-[30px]">
                             <!-- Top Texts -->
                             <div class="flex justify-between items-start">
-                                <h2 class="text-[#000] font-bebas-neue text-[34px] font-normal leading-[120%]">
+                                <h2 class="text-[#000] font-bebas-neue text-[24px] md:text-[28px] xl:text-[34px] font-normal leading-[120%]">
                                     20x30 Cook Site
                                 </h2>
                                 <h2
-                                    class="text-[#16396F] font-bebas-neue text-[44px] font-normal leading-[120%] text-right w-[142px]">
+                                    class="text-[#16396F] font-bebas-neue text-[24px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-normal leading-[120%] text-right w-[142px]">
                                     $300
                                 </h2>
                             </div>
 
                             <!-- Paragraph -->
                             <p
-                                class="mt-[6px] w-[485px] text-[#7C7C7C] font-jost text-[18px] font-normal leading-[120%]">
+                                class="mt-[6px] max-w-full w-full xl:max-w-[485px] text-[#7C7C7C] font-jost text-[16px] md:text-[18px] font-normal md:leading-[140%] leading-[130%]">
                                 Buy your spot before they are gone. If you need a size larger than listed please contact
                                 event organizer and we will accommodate you.
                             </p>
 
                             <!-- Button -->
                             <a href="#"
-                                class="flex mt-[39px] w-[273px] h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
-                                <span class="text-white font-bebas-neue text-[24px] leading-[30px]">
+                                class="flex mt-[24px] md:mt-[30px] xl:mt-[39px] w-[240px] md:w-[273px] h-[50px] md:h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
+                                <span class="text-white font-bebas-neue text-[20px] md:text-[24px] leading-[30px]">
                                     Buy now
                                 </span>
                             </a>
                         </div>
                     </div>
-                    <div class="single-img1 w-[1176px] justify-between h-[317px] flex border border-[#E7E7E7] bg-white flex-shrink-0">
+                    <div
+                        class="single-img1 w-full max-w-[1176px] justify-between h-auto xl:h-[317px] flex  flex-col md:flex-row border border-[#E7E7E7] bg-white flex-shrink-0">
                         <!-- Left Image -->
-                        <div class="w-[545px] h-[317px]">
+                        <div class="md:max-w-[400px] xl:max-w-[545px] max-w-full w-full h-auto  xl:h-[317px]">
                             <img src="./assets/images/single-card-img2.png" alt="Card Image"
                                 class="w-full h-full object-cover" />
                         </div>
 
                         <!-- Right Content -->
-                        <div class="flex-1 flex flex-col justify-between pt-[45px] pb-[48px] pl-[47px] pr-[56px]">
+                        <div class="flex-1 flex flex-col justify-between md:pt-[35px] pt-[24px] xl:pt-[45px] pb-[24px] md:pb-[36px] xl:pb-[48px]  pl-auto xl:pl-[47px] pr-auto xl:pr-[56px] px-[15px] md:px-[30px]">
                             <!-- Top Texts -->
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-[#000] font-bebas-neue text-[24px] md:text-[28px] xl:text-[34px] font-normal leading-[120%]">
+                                    30x30 Cook Site
+                                </h2>
+                                <h2
+                                    class="text-[#16396F] font-bebas-neue text-[24px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-normal leading-[120%] text-right w-[142px]">
+                                    $325
+                                </h2>
+                            </div>
+
+                            <!-- Paragraph -->
+                            <p
+                                class="mt-[6px] max-w-full w-full xl:max-w-[485px] text-[#7C7C7C] font-jost text-[16px] md:text-[18px] font-normal md:leading-[140%] leading-[130%]">
+                                Buy your spot before they are gone. If you need a size larger than listed please contact
+                                event organizer and we will accommodate you.
+                            </p>
+
+                            <!-- Button -->
+                            <a href="#"
+                                class="flex mt-[24px] md:mt-[30px] xl:mt-[39px] w-[240px] md:w-[273px] h-[50px] md:h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
+                                <span class="text-white font-bebas-neue text-[20px] md:text-[24px] leading-[30px]">
+                                    Buy now
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="single-img1 w-full max-w-[1176px] justify-between h-auto xl:h-[317px] flex  flex-col md:flex-row border border-[#E7E7E7] bg-white flex-shrink-0">
+                        <!-- Left Image -->
+                        <div class="md:max-w-[400px] xl:max-w-[545px] max-w-full w-full h-auto  xl:h-[317px]">
+                            <img src="./assets/images/single-card-img1.png" alt="Card Image"
+                                class="w-full h-full object-cover" />
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="flex-1 flex flex-col justify-between md:pt-[35px] pt-[24px] xl:pt-[45px] pb-[24px] md:pb-[36px] xl:pb-[48px]  pl-auto xl:pl-[47px] pr-auto xl:pr-[56px] px-[15px] md:px-[30px]">
+                            <!-- Top Texts -->
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-[#000] font-bebas-neue text-[24px] md:text-[28px] xl:text-[34px] font-normal leading-[120%]">
+                                    20x50 Cook Site
+                                </h2>
+                                <h2
+                                    class="text-[#16396F] font-bebas-neue text-[24px] md:text-[28px] lg:text-[36px] xl:text-[44px] font-normal leading-[120%] text-right w-[142px]">
+                                    $350
+                                </h2>
+                            </div>
+
+                            <!-- Paragraph -->
+                            <p
+                                class="mt-[6px] max-w-full w-full xl:max-w-[485px] text-[#7C7C7C] font-jost text-[16px] md:text-[18px] font-normal md:leading-[140%] leading-[130%]">
+                                Buy your spot before they are gone. If you need a size larger than listed please contact
+                                event organizer and we will accommodate you.
+                            </p>
+
+                            <!-- Button -->
+                            <a href="#"
+                                class="flex mt-[24px] md:mt-[30px] xl:mt-[39px] w-[240px] md:w-[273px] h-[50px] md:h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
+                                <span class="text-white font-bebas-neue text-[20px] md:text-[24px] leading-[30px]">
+                                    Buy now
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div
+                        class="single-img1 w-full max-w-[1176px] justify-between h-[317px] flex border border-[#E7E7E7] bg-white flex-shrink-0">
+                      
+                        <div class="w-[545px] h-[317px]">
+                            <img src="./assets/images/single-card-img2.png" alt="Card Image"
+                                class="w-full h-full object-cover" />
+                        </div>
+
+                        <div class="flex-1 flex flex-col justify-between pt-[45px] pb-[48px] pl-[47px] pr-[56px]">
                             <div class="flex justify-between items-start">
                                 <h2 class="text-[#000] font-bebas-neue text-[34px] font-normal leading-[120%]">
                                     20x30 Cook Site
@@ -407,14 +480,12 @@
                                 </h2>
                             </div>
 
-                            <!-- Paragraph -->
                             <p
                                 class="mt-[6px] w-[485px] text-[#7C7C7C] font-jost text-[18px] font-normal leading-[120%]">
                                 Buy your spot before they are gone. If you need a size larger than listed please contact
                                 event organizer and we will accommodate you.
                             </p>
 
-                            <!-- Button -->
                             <a href="#"
                                 class="flex mt-[39px] w-[273px] h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
                                 <span class="text-white font-bebas-neue text-[24px] leading-[30px]">
@@ -423,16 +494,17 @@
                             </a>
                         </div>
                     </div>
-                    <div class="single-img1 w-[1176px] justify-between h-[317px] flex border border-[#E7E7E7] bg-white flex-shrink-0">
-                        <!-- Left Image -->
+                    <div
+                        class="single-img1 w-full max-w-[1176px] justify-between h-[317px] flex border border-[#E7E7E7] bg-white flex-shrink-0">
+                      
                         <div class="w-[545px] h-[317px]">
                             <img src="./assets/images/single-card-img3.png" alt="Card Image"
                                 class="w-full h-full object-cover" />
                         </div>
 
-                        <!-- Right Content -->
+                       
                         <div class="flex-1 flex flex-col justify-between pt-[45px] pb-[48px] pl-[47px] pr-[56px]">
-                            <!-- Top Texts -->
+                           
                             <div class="flex justify-between items-start">
                                 <h2 class="text-[#000] font-bebas-neue text-[34px] font-normal leading-[120%]">
                                     20x30 Cook Site
@@ -443,14 +515,13 @@
                                 </h2>
                             </div>
 
-                            <!-- Paragraph -->
                             <p
                                 class="mt-[6px] w-[485px] text-[#7C7C7C] font-jost text-[18px] font-normal leading-[120%]">
                                 Buy your spot before they are gone. If you need a size larger than listed please contact
                                 event organizer and we will accommodate you.
                             </p>
 
-                            <!-- Button -->
+                          
                             <a href="#"
                                 class="flex mt-[39px] w-[273px] h-[60px] justify-center items-center gap-[8px] border border-[#16396F] bg-[#16396F]">
                                 <span class="text-white font-bebas-neue text-[24px] leading-[30px]">
@@ -458,7 +529,7 @@
                                 </span>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -466,43 +537,48 @@
     </section>
 
 
+
     <footer class="bg-[#16396F]">
         <div class="container">
-            <div class="flex justify-between gap-[129px] pt-[45px]">
-                <div class="max-w-[695px]">
-                    <div
-                        class="text-[#FFE4D5] font-bebas-pro text-[115px] font-bold leading-[102px] tracking-[2.3px] uppercase">
+            <div
+                class="flex flex-col md:flex-row  justify-between gap-[30px] md:gap-[60x] xl:gap-[129px] pt-[25px] md:pt-[45px]">
+                <div class="w-full md:max-w-[695px]">
+                    <div class="text-[#FFE4D5] font-bebas-pro font-bold uppercase 
+         text-[36px] sm:text-[48px] md:text-[60px] lg:text-[88px] xl:text-[115px]
+         leading-[40px] sm:leading-[54px] md:leading-[76px] lg:leading-[92px] xl:leading-[102px]
+         tracking-[1px] sm:tracking-[1.5px] md:tracking-[2px] lg:tracking-[2.2px] xl:tracking-[2.3px]">
                         Smoke-N-Wings
-                        <span
-                            class="text-[#F65600] font-bebas-pro text-[115px] font-bold leading-[102px] tracking-[2.3px] uppercase">
-                            BBQ</span> Competition
+                        <span class="text-[#F65600]">BBQ</span> Competition
                     </div>
+
                 </div>
-                <div class="max-w-[367px] mt-[24px]">
-                    <ul class="hidden sm:flex">
+                <div class="w-full md:max-w-[367px] mt-[20px] xl:mt-[24px]">
+                    <ul class="">
                         <li>
-                            <a href="enter-competition.html" class="enter-btn !px-[119px] font-bebas-pro">Enter Competition</a>
+                            <a href="enter-competition.html"
+                                class="enter-btn px-auto xl:!px-[119px] font-bebas-pro">Enter Competition</a>
                         </li>
                     </ul>
-                    <div class="flex gap-[98px]">
+                    <div
+                        class="flex flex-col sm:flex-row gap-[10px]  sm:gap-[40px] md:gap-[60px] lg:gap-[80px] xl:gap-[98px] mt-[20px] md:mt-0">
                         <ul
-                            class="flex flex-col  gap-[14px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] py-10">
+                            class="flex  flex-col  gap-[14px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] xl:pt-10 lg:pt-8 md:pt-6 pt-0 xl:pb-10 lg:pb-8 md:pb-6 pb-0">
                             <li><a href="rules.html">Rules</a>
                             </li>
                             <li><a href="sponsors.html">Sponsors</a></li>
                             <li><a href="kids-q.html">Kids-Q</a></li>
                         </ul>
                         <ul
-                            class="flex flex-col  gap-[18px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] py-10">
+                            class="flex flex-col gap-[12px] md:gap-[18px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] xl:pt-10 lg:pt-8 md:pt-6 pt-0 xl:pb-10 lg:pb-8 md:pb-6 pb-5">
                             <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <hr class="border-t border-[#FFFFFF] mx-auto w-[1334px] ml-[-70px] h-[2px] mt-[-9px]" />
+            <hr class="border-t border-[#FFFFFF] mx-auto w-full xl:w-[1334px] xl:ml-[-70px] h-[2px] mt-[-9px]" />
 
-            <div class="flex justify-center items-center pt-[20px]">
+            <div class="flex justify-center items-center py-[20px]">
                 <div
                     class="text-[#FFE4D5] font-jost text-[15px] font-normal leading-normal tracking-[0.3px] uppercase text-center">
                     © copyright 2025 smoke-n-wings.com. All rights reserved.

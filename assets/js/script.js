@@ -213,21 +213,31 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     dots: false,
     arrows: true,
+    variableWidth: false, // 👉 Slide সবসময় container width respect করবে
+    centerMode: false,
     prevArrow:
       "<span class='left-arrow'><i class='bx bx-chevron-left'></i></span>",
     nextArrow:
       "<span class='right-arrow'><i class='bx bx-chevron-right'></i></span>",
     responsive: [
       {
-        breakpoint: 768, // max-width: 767.98px
+        breakpoint: 991,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 576, // max-width: 575.98px
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
+          arrows: false,
         },
       },
     ],
@@ -240,9 +250,6 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 });
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const totalFaqs = 4;
@@ -289,4 +296,3 @@ document.addEventListener("DOMContentLoaded", function () {
     defaultIcon.classList.add("ri-subtract-line");
   }
 });
-

@@ -7,12 +7,12 @@
   /* cta-sec */
 
   .cta-title {
-    font-size: 60px;
-    line-height: 64px;
+    font-size: 56px;
+    line-height: 60px;
   }
   .cta-title span {
-    font-size: 60px;
-    line-height: 64px;
+    font-size: 56px;
+    line-height: 60px;
   }
   .cta-image {
     margin-right: 0px;
@@ -22,7 +22,65 @@
   /* courses */
   /* date-sec */
   /* cta-sec-2 */
+  .cta-sec-2 .cta-text {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .cta-sec-2 .img {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .cta-sec-2-img::after {
+    display: none;
+  }
+  .cta-sec-2-img {
+    margin-left: 0px;
+  }
   /* footer */
+  .enter-btn {
+    padding: 10px 46px;
+  }
+
+  /* sponsors page */
+  /* banner */
+  .bg-clip {
+    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 65% 65%, 0 0);
+  }
+  .txt {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .banner-title {
+    font-size: 42px;
+  }
+  .menu-title {
+    font-size: 48px;
+    line-height: 65px;
+  }
+
+  /* bingham page */
+  .competition-title {
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 1.1px;
+  }
+  .enter-btn {
+    padding: 10px 46px;
+  }
+  .cta-image-after2::after {
+    display: none;
+  }
+
+  .cta-younger::before {
+    left: 17px;
+    width: 92px;
+  }
+  .cta-older::before {
+  left: 7px;
+  width: 116px;
+  }
 }
 
 @media only screen and (max-width: 1068px) {
@@ -54,8 +112,52 @@
   /* when-where */
   /* courses */
   /* date-sec */
+  .date {
+    clip-path: polygon(6% 0, 100% 0, 100% 100%, 0% 100%);
+  }
   /* cta-sec-2 */
+
   /* footer */
+  .enter-btn {
+    padding: 10px 44px;
+  }
+
+  /* sponsors */
+  .txt {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .banner-title {
+    font-size: 40px;
+  }
+
+  /* bingham page */
+  .competition-title {
+    font-size: 44px;
+    line-height: 54px;
+    letter-spacing: 1px;
+  }
+  .competition-desc {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+  }
+
+  .cta-image-after::after {
+    right: -27px;
+    width: 82px;
+  }
+  .cta-image-after2::after {
+    right: -27px;
+    width: 82px;
+  }
+  .cta-younger::before {
+    left: 17px;
+    width: 106px;
+  }
+    .cta-older::before {
+  left: 7px;
+  width: 97px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -100,6 +202,29 @@
   /* date-sec */
   /* cta-sec-2 */
   /* footer */
+  .enter-btn {
+    padding: 10px 40px;
+  }
+
+  /* sponsorspage */
+  .menu-title {
+    font-size: 42px;
+    line-height: 45px;
+  }
+
+  /* bingham page */
+  .competition-title {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 1px;
+  }
+  .cta-younger::before {
+    width: 74px;
+  }
+    .cta-older::before {
+  top: 8px;
+  width: 72px;
+  }
 }
 @media only screen and (max-width: 768px) {
   /* hero */
@@ -146,11 +271,68 @@
   .cta-image img {
     height: 417px;
   }
+  .cta-image-after img {
+    height: 417px;
+  }
   /* when-where */
   /* courses */
+
+  .courses-wrapper .left-arrow,
+  .courses-wrapper .right-arrow {
+    display: none;
+  }
+  .courses-wrapper .slick-slide {
+    padding: 0 8px; /* ছোট স্ক্রিনে কম gap */
+  }
+  .courses-wrapper .slick-list {
+    margin: 0 -8px; /* padding এর সাথে balance */
+  }
+
   /* date-sec */
+  .date {
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .clip-kidsq {
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
+  }
   /* cta-sec-2 */
   /* footer */
+
+  /* sponsors page */
+
+  .cta-image-after::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: -22px;
+    width: 124px;
+    height: 47%;
+    background: #591419;
+    z-index: 2;
+    pointer-events: none;
+    clip-path: polygon(0 0, 27% 75%, 61% 0);
+  }
+  .cta-image-after2::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: -22px;
+    width: 124px;
+    height: 47%;
+    background: #591419;
+    z-index: 2;
+    pointer-events: none;
+    clip-path: polygon(0 0, 27% 75%, 61% 0);
+  }
+  .cta-younger::before {
+    left: 17px;
+    width: 120px;
+  }
+      .cta-older::before {
+  top: 12px;
+  width: 140px;
+  }
 }
 @media only screen and (max-width: 600px) {
   /* hero */
@@ -173,6 +355,40 @@
   /* date-sec */
   /* cta-sec-2 */
   /* footer */
+
+  /* sponsors page */
+  .cta-image-after::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: -20px;
+    width: 73px;
+    height: 47%;
+    background: #591419;
+    z-index: 2;
+    pointer-events: none;
+    clip-path: polygon(0 0, 27% 75%, 61% 0);
+  }
+  .cta-image-after2::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: -20px;
+    width: 73px;
+    height: 47%;
+    background: #591419;
+    z-index: 2;
+    pointer-events: none;
+    clip-path: polygon(0 0, 27% 75%, 61% 0);
+  }
+  .cta-younger::before {
+    left: 11px;
+    width: 72px;
+  }
+        .cta-older::before {
+  top: 7px;
+  width: 78px;
+  }
 }
 @media only screen and (max-width: 400px) {
   /* hero */
@@ -200,9 +416,29 @@
   .cta-image::before {
     width: 50px;
   }
+
+  .courses-wrapper .slick-slide {
+    padding: 0; /* 1টা image হলে gap থাকবে না */
+  }
+  .courses-wrapper .slick-list {
+    margin: 0;
+  }
   /* when-where */
+  .when-clip-path {
+    clip-path: none;
+  }
   /* courses */
   /* date-sec */
+  .clip-kidsq {
+    clip-path: none;
+  }
+  .date {
+    clip-path: none;
+  }
   /* cta-sec-2 */
+  .cta-younger::before {
+    top: 7px;
+    width: 70px;
+  }
   /* footer */
 }

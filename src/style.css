@@ -14,8 +14,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 .enter-btn {
   color: #fff;
   font-size: 20px;
@@ -127,11 +125,23 @@ body {
   overflow: hidden;
   margin-right: -9px;
 }
+.cta-image-after {
+  position: relative;
+  overflow: hidden;
+}
 
 .cta-image img {
   width: 100%;
   height: 517px;
   display: block;
+}
+.cta-image-after img {
+  width: 100%;
+  height: 558px;
+  display: block;
+}
+.cta-image-after img {
+  width: 100%;
 }
 .cta-image-after {
   position: relative;
@@ -139,8 +149,6 @@ body {
 .cta-image-after2 {
   position: relative;
 }
-
-
 
 .cta-image::before {
   content: "";
@@ -155,9 +163,9 @@ body {
   clip-path: polygon(0 0, 0 100%, 109% 1);
   clip-path: polygon(0 0, 30% 75%, 61% 0);
 }
-.cta-younger{
+.cta-younger {
   position: relative;
-    margin-right: -13px;
+  margin-right: -13px;
 }
 .cta-younger::before {
   content: "";
@@ -172,7 +180,7 @@ body {
   clip-path: polygon(0 0, 0 100%, 109% 1);
   clip-path: polygon(0 0, 30% 75%, 61% 0);
 }
-.cta-older{
+.cta-older {
   position: relative;
 }
 .cta-older::before {
@@ -189,14 +197,13 @@ body {
   clip-path: polygon(0 0, 30% 75%, 61% 0);
 }
 
-
 .cta-image-after::after {
   content: "";
   position: absolute;
   top: 13px;
-  left: 455px;
-  width: 133px;
-  height: 56%;
+  right: -49px;
+  width: 136px;
+  height: 51%;
   background: #591419;
   z-index: 2;
   pointer-events: none;
@@ -234,7 +241,9 @@ body {
   clip-path: polygon(0 0, 0 100%, 109% 1);
   clip-path: polygon(0 0, 30% 75%, 61% 0);
 }
-
+.bg-clip {
+  clip-path: polygon(100% 0, 100% 100%, 58% 100%, 38% 65%, 0 0);
+}
 /* default end */
 
 /* hero */
@@ -272,8 +281,27 @@ body {
   display: inline-block;
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
+.brand-title-rule {
+  text-align: center;
+  font-family: "BebasNeuePro", "Bebas Neue", "Bebas Neue Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  font-size: clamp(48px, 17vw, 214px);
+  color: var(--brand-color-rgba);
+  mix-blend-mode: multiply;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
 
 .join-smoke {
+  color: var(--brand-color-smoke-rgba);
+}
+.join-smoke2 {
   color: var(--brand-color-smoke-rgba);
 }
 .BARBEQUE2 {
@@ -348,7 +376,7 @@ body {
 }
 
 .courses-wrapper .slick-list {
-  margin: 0 -12px;
+  margin: 0 -14px;
 }
 .courses-wrapper .left-arrow {
   width: 55px;

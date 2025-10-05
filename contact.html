@@ -12,6 +12,7 @@
     <link href="../src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="../src/style.css" />
     <link rel="stylesheet" href="../src/rules.css" />
+    <link rel="stylesheet" href="../src/responsive.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <div class="flex items-center">
                 <nav id="nav-links" class="hidden lg:flex">
                     <ul
-                        class="nav__links flex items-center gap-[20px] lg:gap-[34px] text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#000] py-10">
+                        class="nav__links flex items-center gap-[20px] lg:gap-[30px] text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#000] py-10">
                         <li><a href="rules.html">Rules</a>
                         </li>
                         <li><a href="sponsors.html">Sponsors</a></li>
@@ -45,7 +46,7 @@
             </ul>
 
 
-            <div class="flex sm:hidden items-center gap-4">
+            <div class="flex lg:hidden items-center gap-4">
                 <button id="menu-toggle" aria-label="Open menu" class="focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 51 51" fill="none">
                         <circle cx="25.5" cy="25.5" r="25.5" fill="#F65600" />
@@ -61,14 +62,18 @@
             </div>
 
             <nav id="mobile-nav"
-                class="flex opacity-0 translate-x-0 fixed top-[78px] right-0 h-screen w-[350px] bg-[#FFE4D5] p-6 shadow-lg z-50 sm:hidden transition-all duration-500 ease-in-out">
+                class="flex opacity-0 translate-x-0 fixed top-[78px] right-0 h-screen w-[350px] bg-[#FFE4D5] p-6 shadow-lg z-50 lg:hidden transition-all duration-500 ease-in-out">
                 <ul class="flex flex-col   gap-10 text-[18px] font-bold leading-[20px] text-[#031F42]">
-                        <li><a href="rules.html">Rules</a>
-                        </li>
-                        <li><a href="sponsors.html">Sponsors</a></li>
-                        <li><a href="kids-q.html">Kids-Q</a></li>
-                        <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="rules.html">Rules</a>
+                    </li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="kids-q.html">Kids-Q</a></li>
+                    <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li>
+                        <a href="enter-competition.html" class="enter-btn font-bebas-pro sm:hidden flex">Enter
+                            Competition</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -76,11 +81,11 @@
     </header>
 
 
-    <section class="banner  mt-[13px] relative">
+
+    <section class="banner  mt-0  xl:mt-[13px] relative">
         <div class="bg-[#591419] relative z-10">
-            <div class="flex justify-center items-center pt-[60px] pb-[45px]">
-                <div class="absolute top-0 right-0 h-full w-[552px] bg-[#F65600] z-20"
-                    style="    clip-path: polygon(100% 0, 100% 100%, 58% 100%, 38% 65%, 0 0);">
+            <div class="flex justify-center items-center  pt-[40px] xl:pt-[60px] pb-[40px] xl:pb-[45px]">
+               <div class="absolute bg-clip top-0 right-0 h-full w-[230px] xl:w-[552px] bg-[#F65600] z-20">
                 </div>
                 <div class="flex relative z-30 flex-col items-center gap-[18px] ">
                     <div class="sub-title">
@@ -88,7 +93,7 @@
                         <div class="divider" aria-hidden="true"></div>
                         <div class="txt">CONTACT</div>
                     </div>
-                    <div class="banner-title">
+                    <div class="banner-title text-center">
                         <h2>CONTACT US</h2>
                     </div>
                 </div>
@@ -97,45 +102,45 @@
     </section>
 
 
-    <section class="cta-sec bigham pt-[44px] pb-[135px]">
+    <section class="cta-sec bigham xl:pt-[44px] lg:pt-[38px] pt-[30px] xl:pb-[135px] lg:pb-[70px] md:pb-[60px] pb-[30px]">
         <div class="container relative z-1">
-            <div class="hero-inner  ml-[328px] mt-[-5px]  absolute -top-[50px] left-1/2 -translate-x-1/2">
+            <div class="hero-inner hidden xl:block ml-[328px] mt-[-5px]  absolute -top-[50px] left-1/2 -translate-x-1/2">
                 <div class="brand-title-2 BARBEQUE2 !text-[146px] !h-[160px]">BARBEQUE</div>
             </div>
 
-            <div class="cta !gap-[30px] pt-[65px] ">
-                <div class="cta-text !pt-0">
-                    <div class="competition-title  mb-[17px]">CONTACT US</div>
+            <div class="cta w-full xl:!gap-[30px] xl:pt-[65px] lg:pt-[40px] md:pt-[30px] sm:pt-[10px] pt-0">
+                <div class="w-full md:w-1/2 xl:w-[485px]  !pt-0">
+                    <div class="competition-title xl:mb-[17px] md:mb-[10px] mb-[8px]">CONTACT US</div>
                     <div class="competition-desc">We will reply as soon as possible</div>
-                    <div class="flex flex-col gap-[24px] mt-[39px]">
+                    <div class="flex flex-col xl:gap-[24px] md:gap-[18px] gap-[10px] xl:mt-[39px] md:mt-[25px] mt-[15px]">
                         <div
-                            class="btn-overlay2 flex items-center w-[485px] h-[99px] bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[24px] font-normal pl-[10px] pr-[23px]">
+                            class="btn-overlay2 flex items-center w-full max-w-full xl:max-w-[485px] xl:h-[99px] h-auto bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[20px] xl:text-[24px] font-normal pl-[10px] pr-[23px]">
 
                             <!-- Icon box -->
-                            <div class="w-[74px] h-[74px] bg-[#16396F] flex items-center justify-center">
-                                <i class="ri-mail-lock-line text-white text-[36px]"></i>
+                            <div class="xl:w-[74px] md:w-[65px] w-[56px] h-[56px] md:h-[65px] xl:h-[74px] bg-[#16396F] flex items-center justify-center">
+                                <i class="ri-mail-lock-line text-white text-[24px] md:text-[30px] xl:text-[36px]"></i>
                             </div>
 
                             <!-- Text -->
                             <span class="ml-[22px] leading-[81px]">smokenwingsbbq@gmail.com</span>
                         </div>
                         <div
-                            class="btn-overlay2 flex items-center w-[485px] h-[99px] bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[24px] font-normal pl-[13px] pr-[23px]">
+                            class="btn-overlay2 flex items-center w-full max-w-full xl:max-w-[485px] xl:h-[99px] h-auto bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[20px] xl:text-[24px] font-normal pl-[10px] pr-[23px]">
 
                             <!-- Icon box -->
-                            <div class="w-[74px] h-[74px] bg-[#16396F] flex items-center justify-center">
-                                <i class="ri-calendar-2-line text-white text-[36px]"></i>
+                            <div class="xl:w-[74px] md:w-[65px] w-[56px] h-[56px] md:h-[65px] xl:h-[74px]  bg-[#16396F] flex items-center justify-center">
+                                <i class="ri-calendar-2-line text-white text-[24px] md:text-[30px] xl:text-[36px]"></i>
                             </div>
 
                             <!-- Text -->
                             <span class="ml-[22px] leading-[81px]">Mon - Fri 09:00 - 18:00</span>
                         </div>
                         <div
-                            class="btn-overlay2 flex items-center w-[485px] h-[99px] bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[24px] font-normal pl-[13px] pr-[23px]">
+                            class="btn-overlay2 flex items-center w-full max-w-full xl:max-w-[485px] xl:h-[99px] h-auto bg-[#FFF4EE] text-[#16396F] font-bebas-neue text-[20px] xl:text-[24px] font-normal pl-[10px] pr-[23px]">
 
                             <!-- Icon box -->
-                            <div class="w-[74px] h-[74px] bg-[#16396F] flex items-center justify-center">
-                                <i class="ri-phone-fill text-white text-[36px]"></i>
+                            <div class="xl:w-[74px] md:w-[65px] w-[56px] h-[56px] md:h-[65px] xl:h-[74px]  bg-[#16396F] flex items-center justify-center">
+                                <i class="ri-phone-fill text-white text-[25px] md:text-[30px] xl:text-[36px]"></i>
                             </div>
 
                             <!-- Text -->
@@ -146,22 +151,22 @@
                     </div>
                 </div>
                 <form
-                    class="bg-[#fff] shadow-[-12px_49px_94px_0_rgba(85,89,90,0.05)] w-[591px] h-[595px] px-[30px] pt-[24px] pr-[50px] z-2">
+                    class="w-full md:w-1/2 bg-[#fff] shadow-[-12px_49px_94px_0_rgba(85,89,90,0.05)] xl:w-[591px] h-auto xl:h-[595px] px-[10px] md:px-[30px] pt-[15px] md:pt-[20px] xl:pt-[24px] pr-auto xl:pr-[50px] z-2">
 
                     <!-- Title -->
                     <h2
-                        class="text-[#16396F] font-bebas-neue text-[38px] font-normal leading-[81px] tracking-[0.76px] uppercase mb-[10px]">
+                        class=" text-[#16396F] font-bebas-neue text-[32px] md:text-[38px] font-normal md:leading-[81px] leading-[61px] md:tracking-[0.76px] tracking-[0.65px]  uppercase">
                         Leave Us <span class="text-[#F65600]">Message</span>
                     </h2>
 
                     <!-- First Row: Name & Email -->
-                    <div class="flex gap-[30px] mb-[22px]">
-                        <div class="flex flex-col w-1/2">
+                    <div class="flex md:flex-row flex-col gap-[24px] md:gap-[30px] mb-[18px] md:mb-[22px]">
+                        <div class="flex flex-col w-full md:w-1/2">
                             <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[6px]">First name</label>
                             <input type="text" class="h-[48px] border border-gray-300 px-3 !rounded-none"
                                 placeholder="First name" />
                         </div>
-                        <div class="flex flex-col w-1/2">
+                        <div class="flex flex-col w-full md:w-1/2">
                             <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[6px]">Email</label>
                             <input type="email" class="h-[48px] border border-gray-300 px-3 !rounded-none"
                                 placeholder="you@company.com" />
@@ -169,14 +174,14 @@
                     </div>
 
                     <!-- Second Row: Subject -->
-                    <div class="flex flex-col mb-[22px]">
+                    <div class="flex flex-col mb-[18px] md:mb-[22px]">
                         <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[4px]">Subject</label>
                         <input type="text" class="w-full h-[48px] border border-gray-300 px-3 !rounded-none"
                             placeholder="Include a message..." />
                     </div>
 
                     <!-- Third Row: Message -->
-                    <div class="flex flex-col mb-[36px]">
+                    <div class="flex flex-col mb-[18px] md:mb-[22px] xl:mb-[36px]">
                         <label class="text-[#16396F] font-bebas-neue text-[16px] mb-[4px]">Message</label>
                         <textarea class="w-[512px] !h-[128px] border border-gray-300 px-3 py-2 !rounded-none"
                             placeholder="Include a message..."></textarea>
@@ -194,43 +199,49 @@
     </section>
 
 
+
+
     <footer class="bg-[#16396F]">
         <div class="container">
-            <div class="flex justify-between gap-[129px] pt-[45px]">
-                <div class="max-w-[695px]">
-                    <div
-                        class="text-[#FFE4D5] font-bebas-pro text-[115px] font-bold leading-[102px] tracking-[2.3px] uppercase">
+            <div
+                class="flex flex-col md:flex-row  justify-between gap-[30px] md:gap-[60x] xl:gap-[129px] pt-[25px] md:pt-[45px]">
+                <div class="w-full md:max-w-[695px]">
+                    <div class="text-[#FFE4D5] font-bebas-pro font-bold uppercase 
+         text-[36px] sm:text-[48px] md:text-[60px] lg:text-[88px] xl:text-[115px]
+         leading-[40px] sm:leading-[54px] md:leading-[76px] lg:leading-[92px] xl:leading-[102px]
+         tracking-[1px] sm:tracking-[1.5px] md:tracking-[2px] lg:tracking-[2.2px] xl:tracking-[2.3px]">
                         Smoke-N-Wings
-                        <span
-                            class="text-[#F65600] font-bebas-pro text-[115px] font-bold leading-[102px] tracking-[2.3px] uppercase">
-                            BBQ</span> Competition
+                        <span class="text-[#F65600]">BBQ</span> Competition
                     </div>
+
                 </div>
-                <div class="max-w-[367px] mt-[24px]">
-                    <ul class="hidden sm:flex">
+                <div class="w-full md:max-w-[367px] mt-[20px] xl:mt-[24px]">
+                    <ul class="">
                         <li>
-                            <a href="enter-competition.html" class="enter-btn !px-[119px] font-bebas-pro">Enter Competition</a>
+                            <a href="enter-competition.html"
+                                class="enter-btn px-auto xl:!px-[119px] font-bebas-pro">Enter Competition</a>
                         </li>
                     </ul>
-                    <div class="flex gap-[98px]">
+                    <div
+                        class="flex flex-col sm:flex-row gap-[10px]  sm:gap-[40px] md:gap-[60px] lg:gap-[80px] xl:gap-[98px] mt-[20px] md:mt-0">
                         <ul
-                            class="flex flex-col  gap-[14px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] py-10">
+                            class="flex  flex-col  gap-[14px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] xl:pt-10 lg:pt-8 md:pt-6 pt-0 xl:pb-10 lg:pb-8 md:pb-6 pb-0">
                             <li><a href="rules.html">Rules</a>
                             </li>
                             <li><a href="sponsors.html">Sponsors</a></li>
                             <li><a href="kids-q.html">Kids-Q</a></li>
                         </ul>
                         <ul
-                            class="flex flex-col  gap-[18px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] py-10">
+                            class="flex flex-col gap-[12px] md:gap-[18px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] xl:pt-10 lg:pt-8 md:pt-6 pt-0 xl:pb-10 lg:pb-8 md:pb-6 pb-5">
                             <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <hr class="border-t border-[#FFFFFF] mx-auto w-[1334px] ml-[-70px] h-[2px] mt-[-9px]" />
+            <hr class="border-t border-[#FFFFFF] mx-auto w-full xl:w-[1334px] xl:ml-[-70px] h-[2px] mt-[-9px]" />
 
-            <div class="flex justify-center items-center pt-[20px]">
+            <div class="flex justify-center items-center py-[20px]">
                 <div
                     class="text-[#FFE4D5] font-jost text-[15px] font-normal leading-normal tracking-[0.3px] uppercase text-center">
                     © copyright 2025 smoke-n-wings.com. All rights reserved.
