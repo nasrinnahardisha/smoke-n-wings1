@@ -1,7 +1,18 @@
 @media only screen and (max-width: 1199px) {
   /* hero */
+  .standard-logo,
+  .sticky-logo {
+    width: 160px;
+  }
   .brand-title {
     font-size: clamp(48px, 16vw, 247px);
+  }
+  .enter-left {
+    left: -69px;
+  }
+
+  .enter-right {
+    right: -69px;
   }
 
   /* cta-sec */
@@ -14,9 +25,9 @@
     font-size: 56px;
     line-height: 60px;
   }
-  .cta-image {
+  /* .cta-image {
     margin-right: 0px;
-  }
+  } */
 
   /* when-where */
   /* courses */
@@ -38,9 +49,6 @@
     margin-left: 0px;
   }
   /* footer */
-  .enter-btn {
-    padding: 10px 46px;
-  }
 
   /* sponsors page */
   /* banner */
@@ -53,7 +61,7 @@
   }
 
   .banner-title {
-    font-size: 42px;
+    font-size: 38px;
   }
   .menu-title {
     font-size: 48px;
@@ -67,7 +75,7 @@
     letter-spacing: 1.1px;
   }
   .enter-btn {
-    padding: 10px 46px;
+    padding: 10px 40px;
   }
   .cta-image-after2::after {
     display: none;
@@ -78,13 +86,17 @@
     width: 92px;
   }
   .cta-older::before {
-  left: 7px;
-  width: 116px;
+    left: 7px;
+    width: 116px;
   }
 }
 
 @media only screen and (max-width: 1068px) {
   /* hero */
+  .standard-logo,
+  .sticky-logo {
+    width: 150px;
+  }
   .enter-left {
     left: 0px;
     font-size: 40px;
@@ -119,7 +131,7 @@
 
   /* footer */
   .enter-btn {
-    padding: 10px 44px;
+    padding: 10px 36px;
   }
 
   /* sponsors */
@@ -154,25 +166,31 @@
     left: 17px;
     width: 106px;
   }
-    .cta-older::before {
-  left: 7px;
-  width: 97px;
+  .cta-older::before {
+    left: 7px;
+    width: 97px;
   }
 }
 
 @media only screen and (max-width: 991px) {
   /* hero */
+  .standard-logo,
+  .sticky-logo {
+    width: 122px;
+  }
+  .hero {
+    height: 530px;
+  }
   .enter-left {
-    left: 130px;
-    font-size: 30px;
-    padding: 15px 67px;
+    left: 0px;
+    font-size: 24px;
+    padding: 15px 50px;
   }
 
   .enter-right {
-    right: 130px;
-    margin-top: 160px;
-    font-size: 30px;
-    padding: 16px 64px 16px 64px;
+    right: 0px;
+    font-size: 24px;
+    padding: 15px 50px;
   }
 
   .brand-title {
@@ -203,13 +221,14 @@
   /* cta-sec-2 */
   /* footer */
   .enter-btn {
-    padding: 10px 40px;
+    padding: 10px 15px;
+    font-size: 16px;
   }
 
   /* sponsorspage */
   .menu-title {
-    font-size: 42px;
-    line-height: 45px;
+    font-size: 38px;
+    line-height: 42px;
   }
 
   /* bingham page */
@@ -221,28 +240,40 @@
   .cta-younger::before {
     width: 74px;
   }
-    .cta-older::before {
-  top: 8px;
-  width: 72px;
+  .cta-older::before {
+    top: 8px;
+    width: 72px;
   }
 }
 @media only screen and (max-width: 768px) {
+  .standard-logo,
+  .sticky-logo {
+    width: 140px;
+  }
+
+  
   /* hero */
+  .hero {
+    height: 440px;
+  }
 
   .enter-left {
     clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
-    font-size: 28px;
+    font-size: 24px;
+    padding: 12px 30px;
   }
   .enter-right {
     clip-path: polygon(5% 0, 100% 0%, 100% 99%, 0% 100%);
-    font-size: 28px;
+    font-size: 24px;
+    padding: 12px 30px;
   }
 
   /* cta-sec */
   .cta {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
   }
   .cta-title {
     font-size: 36px;
@@ -268,9 +299,6 @@
     width: 100%;
   }
 
-  .cta-image img {
-    height: 417px;
-  }
   .cta-image-after img {
     height: 417px;
   }
@@ -329,24 +357,61 @@
     left: 17px;
     width: 120px;
   }
-      .cta-older::before {
-  top: 12px;
-  width: 140px;
+  .cta-older::before {
+    top: 12px;
+    width: 140px;
   }
+  /* bingham page */
+  .competition-title {
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .cta-text {
+    width: 100%; /* Make the text container full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text inside */
+  }
+
+  .cta-text a {
+    margin-left: 0; /* Remove any left margin */
+    margin-right: 0; /* Remove any right margin */
+    display: inline-flex;
+    justify-content: center;
+  }
+  .competition-desc {
+    text-align: center;
+  }
+  
 }
 @media only screen and (max-width: 600px) {
   /* hero */
+  .standard-logo,
+  .sticky-logo {
+    width: 120px;
+  }
   .hero {
-    height: 530px;
+    height: 430px;
   }
   .enter-left {
-    font-size: 18px;
+    font-size: 16px;
+    left: 0px;
+    padding: 13px 30px;
   }
 
   .enter-right {
-    font-size: 18px;
+    font-size: 16px;
+    right: 0px;
+    padding: 13px 30px;
   }
   /* cta-sec */
+  /* .cta-image img{
+    height: 300px;
+  } */
   .cta-image::before {
     width: 86px;
   }
@@ -385,22 +450,28 @@
     left: 11px;
     width: 72px;
   }
-        .cta-older::before {
-  top: 7px;
-  width: 78px;
+  .cta-older::before {
+    top: 7px;
+    width: 78px;
   }
 }
 @media only screen and (max-width: 400px) {
   /* hero */
+  .standard-logo,
+  .sticky-logo {
+    width: 115px;
+  }
+  .hero {
+    height: 420px;
+  }
   .enter-left {
-    left: 80px;
-    padding: 15px 67px;
+    left: 0px;
+    padding: 12px 20px;
   }
 
   .enter-right {
-    right: 63px;
-    margin-top: 160px;
-    padding: 16px 64px 16px 64px;
+    right: 0px;
+    padding: 12px 20px;
   }
   /* cta-sec */
   .cta-title {
@@ -414,7 +485,8 @@
     letter-spacing: 0.8px;
   }
   .cta-image::before {
-    width: 50px;
+    width: 69px;
+    top: 8px;
   }
 
   .courses-wrapper .slick-slide {

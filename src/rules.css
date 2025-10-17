@@ -81,7 +81,7 @@
 .competition-title {
   color: #16396f;
   font-family: "Bebas Neue";
-  font-size: 60px;
+  font-size: 59px;
   font-style: normal;
   font-weight: 400;
   line-height: 81px; /* 135% */
@@ -146,3 +146,6 @@
     url('../assets/images/form-bg.png') no-repeat center;
   background-size: cover;
 }
+
+
+

@@ -17,3 +17,68 @@
        --font-bebas-pro: "Bebas Neue Pro", sans-serif;
        --font-bebas-neue: "Bebas Neue", sans-serif;
 }
+
+
+
+/* input.wpcf7-form-control.wpcf7-submit.has-spinner.sub-btn{
+ @apply w-full h-[45px] md:h-[48px] bg-[#16396F] text-white text-[20px] font-normal leading-normal tracking-[0.4px] !rounded-none;
+} */
+
+
+
+input.input-name{
+    @apply h-[40px] md:h-[48px] border border-gray-300 px-3 !rounded-none
+
+}
+
+input.input-sub{
+    @apply  h-[40px] md:h-[48px] border border-gray-300 px-3 !rounded-none
+
+}
+textarea.input-textarea{
+    @apply w-full xl:w-[512px] !h-[128px] border border-gray-300 px-3 py-2 !rounded-none
+
+}
+
+.sub-btn{
+    @apply w-full h-[45px] md:h-[48px] bg-[#16396F] text-white text-[20px] font-normal leading-normal tracking-[0.4px] !rounded-none
+}
+
+.wpcf7-form-control-wrap {
+  @apply w-full block;
+}
+
+.wpcf7-form-control {
+  @apply w-full block;
+}
+
+.wpcf7 input,
+.wpcf7 textarea {
+  @apply w-full;
+}
+
+
+.enter-name{
+  @apply h-[48px] border border-gray-300 px-3 pr-10 !rounded-none w-full;
+  
+}
+
+.form-checkbox{
+  @apply  h-3 !w-3 text-blue-500
+}
+
+.enter-sub-btn{
+  @apply w-full mt-[18px] xl:mt-[36px] h-[48px] bg-[#F65600] text-white text-lg font-semibold !rounded-none;
+}
+
+.kids-form-name{
+  @apply h-[48px] border border-gray-300 px-3 !rounded-none;
+  
+}
+.kids-form-textarea{
+  @apply w-full xl:w-[512px] !h-[68px] border border-gray-300 px-3 py-2 !rounded-none;
+}
+
+.kids-form-btn{
+  @apply w-full mb-[30px] xl:mb-[39px] h-[48px] bg-[#16396F] text-white  font-jost text-[16px] font-normal leading-[24px] !rounded-none;
+}

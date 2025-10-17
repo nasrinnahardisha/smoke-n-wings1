@@ -19,10 +19,11 @@
   <link href="./src/output.css" rel="stylesheet" />
   <link rel="stylesheet" href="./src/style.css" />
   <link rel="stylesheet" href="./src/responsive.css" />
+
 </head>
 
 <body>
-  <header class="w-full bg-[#fff] z-50 py-0 px-[30px] xl:px-[15px]">
+  <header class="w-full bg-[#fff] z-50 py-3 xl:py-0 px-[30px] xl:px-[15px]">
     <div class="max-w-[1225px] mx-auto flex items-center justify-between">
       <div class="logo">
         <a href="index.html" class="standard-logo">
@@ -45,14 +46,19 @@
           </ul>
         </nav>
       </div>
-      <ul class="hidden sm:flex mr-[7px]">
+      <ul class="hidden lg:flex mr-[7px]">
         <li>
           <a href="enter-competition.html" class="enter-btn font-bebas-pro">Enter Competition</a>
         </li>
       </ul>
 
 
-      <div class="flex lg:hidden items-center gap-4">
+      <div class="flex lg:hidden items-center gap-6">
+        <ul class="hidden sm:flex lg:hidden">
+          <li>
+            <a href="enter-competition.html" class="enter-btn font-bebas-pro">Enter Competition</a>
+          </li>
+        </ul>
         <button id="menu-toggle" aria-label="Open menu" class="focus:outline-none">
           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 51 51" fill="none">
             <circle cx="25.5" cy="25.5" r="25.5" fill="#F65600" />
@@ -61,20 +67,30 @@
           </svg>
         </button>
 
-        <button id="menu-close" aria-label="Close menu" class="hidden focus:outline-none text-[#F65600] text-4xl">
+        <button id="menu-close" aria-label="Close menu"
+          class="w-[45px] h-[45px] rounded-full items-center justify-center bg-[#F65600] hover:bg-gray-100 shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F65600] text-white text-2xl hidden">
           <i class="ri-close-line"></i>
         </button>
+
+        <!-- <button id="menu-close" aria-label="Close menu"
+          class="hidden w-[45px] h-[45px] rounded-full  items-center justify-center bg-white hover:bg-gray-100 shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F65600] text-[#F65600]">
+          <i class="ri-close-line text-2xl" aria-hidden="true"></i>
+        </button> -->
+
       </div>
 
       <nav id="mobile-nav"
-        class="flex opacity-0 translate-x-0 fixed top-[78px] right-0 h-screen w-[350px] bg-[#FFE4D5] p-6 shadow-lg z-50 lg:hidden transition-all duration-500 ease-in-out">
-        <ul class="flex flex-col   gap-10 text-[18px] font-bold leading-[20px] text-[#031F42]">
-          <li><a href="index.html" class="flex  items-center">Rules</a>
+        class="flex opacity-0 translate-x-0 fixed top-[77px] right-0 h-screen w-[260px] bg-[#ffffff] px-4 py-8 shadow-lg z-50 lg:hidden transition-all duration-500 ease-in-out">
+        <ul class="flex flex-col   gap-5 text-[16px] font-bold leading-[20px] text-[#031F42]">
+          <li><a href="rules.html" class="flex  items-center">Rules</a>
           </li>
-          <li><a href="#about">Sponsors</a></li>
-          <li><a href="#">Kids-Q</a></li>
-          <li><a href="#">Bingham Mayors Scholarship</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="kids-q.html">Kids-Q</a></li>
+          <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <a href="enter-competition.html" class="inline-flex font-normal sm:hidden enter-btn font-bebas-pro">Enter Competition</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -82,9 +98,9 @@
   </header>
 
 
-  <section class="hero overflow-hidden bg-[#F8B895]  flex  relative z-10 mt-[-5px]">
+  <section class="hero overflow-hidden bg-[#F8B895]  flex  relative z-10 mt-0 xl:mt-[-5px]">
     <div class="max-w-[1230px] mx-auto  w-full relative">
-      <div class="hero-inner absolute mt-[-190px] md:mt-[-250px] lg:mt-[-275px] xl:mt-[-280px] 2xl:mt-[-306px]">
+      <div class="hero-inner absolute mt-[-120px] md:mt-[-250px] lg:mt-[-275px] xl:mt-[-280px] 2xl:mt-[-306px]">
         <h1 class="brand-title w-full text-center block !xl:text-[239px]">Smoke-N-Wings</h1>
         <h1 class="brand-title w-full text-center block !xl:text-[239px] xl:mt-[-44px]">Idaho State bbq</h1>
         <h1 class="brand-title w-full text-center block !xl:text-[239px] xl:mt-[-33px]">Competition</h1>
@@ -92,7 +108,7 @@
 
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <img src="./assets/images/meet.png" alt="logo"
-          class="h-[670px] md:h-[720px] lg:h-[777px] xl:h-[870px] mt-[120px] md:mt-[150px] lg-[170px] xl:mt-[196px] pl-[2px] object-cover">
+          class="h-[520px] md:h-[720px] lg:h-[777px] xl:h-[870px] mt-[120px] md:mt-[150px] lg-[170px] xl:mt-[196px] pl-[2px] object-cover">
       </div>
       <a href="enter-competition.html" class="enter-left font-bebas-pro bg-[#f65600]">
         Enter Competition
@@ -105,13 +121,13 @@
   </section>
 
 
-  <section class="cta-sec">
+  <section class="cta-sec join">
     <div class="container relative z-1">
       <div
         class="hero-inner xl:block hidden BARBEQUE ml-[-256px] mt-[40px]  absolute -top-[50px] left-1/2 -translate-x-1/2">
         <div class="brand-title join-smoke !text-start">SMOKE-N-WINGS</div>
       </div>
-      <div class="cta pt-[30px] md:pt-[40px] lg:pt-[87px]">
+      <div class="cta pt-[10px] md:pt-[40px] lg:pt-[87px]">
         <div class="cta-text">
           <div class="cta-title">Join us for the <span>2025
               Smoke-N-Wings</span> BBQ Competition!</div>
@@ -120,32 +136,35 @@
             The winning team will be crowned the SMOKE-N-WINGS winner and the Idaho State Champions and be eligible for
             the American Royal and the Jack Daniels World Championship.</div>
         </div>
-        <div class="cta-image relative">
+        <div class="cta-image-left-overlay mt-0 xl:mt-[12px]">
+
           <img src="./assets/images/join-us.png" alt="logo" class="w-full h-auto block">
+
+          <!-- 
           <a href="enter-competition.html"
-            class="bottom-overlay ml-[6] xl:ml-[11px] w-full 
-            text-center absolute  bottom-0 md:bottom-3  text-white text-[18px] sm:text-[32px] md:text-[40px] xl:text-[47px] font-bebas-pro font-bold bg-[#16396F]  py-2 uppercase tracking-[0.96px]">
+            class="bottom-overlay w-full 
+            text-center absolute  bottom-0  text-white text-[18px] sm:text-[32px] md:text-[40px] xl:text-[47px] font-bebas-pro font-bold bg-[#16396F]  py-2 uppercase tracking-[0.96px] z-20">
             Enter the competition
-          </a>
+          </a> -->
 
         </div>
       </div>
     </div>
   </section>
 
-  <section class="when-where pt-[40px] xl:pt-[64px] pb-0 xl:pb-[47px] relative">
+  <section class="when-where pt-[15px] md:pt-[40px] xl:pt-[73px] pb-0 xl:pb-[47px] relative">
     <div class="container">
       <div
-        class="flex flex-col lg:flex-row justify-between gap-[30px] lg:gap-[44px] xl:gap-[85px] relative xl:pt-[20px] pt-0">
+        class="flex flex-col lg:flex-row justify-between gap-[15px] md:gap-[30px] lg:gap-[44px] xl:gap-[85px] relative xl:pt-[20px] pt-0">
 
         <!-- Left Box -->
         <div
-          class="ml-0 xl:ml-[-125px] py-3  w-full lg:w-[697px] h-auto sm:h-[140px] lg:h-[161px] bg-[#591419] flex xl:gap-[61px] gap-[20px] sm:gap-[60px] md:gap-[70px] flex-col sm:flex-row items-center justify-center mx-auto lg:mx-0  xl:mt-[-30px] mt-0 when-clip-path">
+          class="ml-0 xl:ml-[-125px] py-3  w-full lg:w-[697px] h-auto sm:h-[140px] lg:h-[161px] bg-[#591419] flex xl:gap-[61px] gap-[10px] sm:gap-[60px] md:gap-[70px] flex-col sm:flex-row items-center justify-center mx-auto lg:mx-0  xl:mt-[-30px] mt-0 when-clip-path">
 
           <!-- WHEN -->
           <div class="flex flex-col text-center">
             <h4
-              class="text-[#FFE4D5] font-bebas-pro text-[32px] md:text-[40px] lg:text-[48px]   font-bold leading-normal lg:tracking-[0.96px] tracking-[0.86px] uppercase">
+              class="text-[#FFE4D5] font-bebas-pro text-[28px] md:text-[40px] lg:text-[48px]   font-bold leading-normal lg:tracking-[0.96px] tracking-[0.86px] uppercase">
               WHEN
             </h4>
             <h5
@@ -157,7 +176,7 @@
           <!-- WHERE -->
           <div class="flex flex-col text-center">
             <h4
-              class="text-[#FFE4D5] font-bebas-pro text-[32px] md:text-[40px] lg:text-[48px] font-bold leading-normal tracking-[0.96px] uppercase">
+              class="text-[#FFE4D5] font-bebas-pro text-[28px] md:text-[40px] lg:text-[48px] font-bold leading-normal tracking-[0.96px] uppercase">
               WHERE:
             </h4>
             <h5
@@ -184,7 +203,7 @@
   </section>
 
 
-  <section id="courses" class="xl:py-20 lg:py-16 md:py-12 sm:py-10 py-6">
+  <section id="courses" class="xl:py-20 lg:py-16 md:py-12 sm:py-10 py-4">
     <div class="container relative z-1">
       <div class="hero-inner hidden xl:block ml-[310px] mt-[-6px]  absolute -top-[50px] left-1/2 -translate-x-1/2">
         <div class="brand-title-2 BARBEQUE2 !text-[156px] !h-[160px]">BARBEQUE</div>
@@ -204,19 +223,19 @@
       <!-- Slider -->
       <div class="courses-wrapper slick-items">
         <div class="course course-1 active-btn img">
-          <img src="./assets/images/slider-1.png" alt="img">
+          <img src="./assets/images/slider-1.png" class="w-full h-full object-cover" alt="img">
         </div>
         <div class="course course-2 img">
-          <img src="./assets/images/slider-2.png" alt="img">
+          <img src="./assets/images/slider-2.png" class="w-full h-full object-cover" alt="img">
         </div>
         <div class="course course-3 img">
-          <img src="./assets/images/slider-3.png" alt="img">
+          <img src="./assets/images/slider-3.png" class="w-full h-full object-cover" alt="img">
         </div>
         <div class="course course-4 img">
-          <img src="./assets/images/slider-4.png" alt="img">
+          <img src="./assets/images/slider-4.png" class="w-full h-full object-cover" alt="img">
         </div>
         <div class="course course-5 img">
-          <img src="./assets/images/slider-1.png" alt="img">
+          <img src="./assets/images/slider-1.png" class="w-full h-full object-cover" alt="img">
         </div>
       </div>
     </div>
@@ -226,13 +245,13 @@
   <section class="date-sec my-1 h-auto md:h-[329px] xl:h-[349px]  relative z-10">
     <div class="container">
       <div
-        class="flex justify-between h-full  md:flex-row flex-col gap-[115px] sm:gap-[125px] md:gap-[60px] lg:gap-[90px] xl:gap-[75px] 2xl:gap-[30px]">
+        class="flex justify-between h-full  md:flex-row flex-col gap-[70px] sm:gap-[125px] md:gap-[60px] lg:gap-[90px] xl:gap-[75px] 2xl:gap-[30px]">
 
         <!-- Left Colored Bars -->
         <div class="h-[70px] md:h-[329px] xl:h-[349px] gap-[10px] flex">
           <!-- First Box -->
           <a href="kids-q.html"
-            class="relative w-full md:w-[120px] xl:w-[157px] h-[60px] sm:h-[70px] md:h-[329px] xl:h-[349px] bg-[#16396F] mx-auto md:mx-0 text-white font-bebas-pro font-bold text-[32px] sm:text-[40px] md:text-[42px] xl:text-[48px] uppercase tracking-[0.96px] flex items-center justify-center clip-kidsq overflow-hidden">
+            class="relative w-full md:w-[120px] xl:w-[157px] h-[50px] sm:h-[70px] md:h-[329px] xl:h-[349px] bg-[#16396F] mx-auto md:mx-0 text-white font-bebas-pro font-bold text-[20px] sm:text-[36px] md:text-[42px] xl:text-[48px] uppercase tracking-[0.96px] flex items-center justify-center clip-kidsq overflow-hidden">
 
             <span
               class="absolute mt-0 md:mt-[230px] xl:mt-[250px] mx-auto  md:ml-[97px] xl:ml-[114px] xl:rotate-[282deg] md:rotate-[279deg]  whitespace-nowrap origin-bottom-left">
@@ -243,7 +262,7 @@
 
           <!-- Second Box -->
           <div
-            class="w-[90%] sm:w-[94%] right-[15px] md:right-auto md:w-[120px] xl:w-[150px] mt-[90px] sm:mt-[100px] md:mt-0 bg-[#F65600] text-white font-bebas-pro font-bold text-[32px] sm:text-[40px] md:text-[42px] xl:text-[48px] uppercase tracking-[0.96px] flex absolute  md:ml-[80px] lg:ml-[106px]  h-[60px] sm:h-[70px] md:h-[329px] xl:h-[349px] clip-kidsq  mx-auto ">
+            class="w-[92%] sm:w-[94%] right-auto sm:right-[15px] md:right-auto md:w-[120px] xl:w-[150px] mt-[70px] sm:mt-[100px] md:mt-0 bg-[#F65600] text-white font-bebas-pro font-bold text-[20px] sm:text-[36px] md:text-[42px] xl:text-[48px] uppercase tracking-[0.96px] flex absolute  md:ml-[80px] lg:ml-[106px]  h-[50px] sm:h-[70px] md:h-[329px] xl:h-[349px] clip-kidsq  mx-auto ">
 
             <span
               class="xl:mt-[255px] lg:mt-[251px] md:mr-[7px] xl:mr-0 md:mt-[246px] mx-auto my-auto md:my-0  md:ml-[86px]  xl:ml-[99px] xl:rotate-[281deg] md:rotate-[279deg] whitespace-nowrap origin-bottom-left">
@@ -296,18 +315,19 @@
 
 
   <section
-    class="cta-sec-2 xl:pt-[71px] lg:pt-[60px] md:pt-[50px] pt-[40px] xl:pb-[90px] lg:pb-[70px] md:pb-[60px] pb-[40px]">
+    class="cta-sec-2 xl:pt-[71px] lg:pt-[60px] md:pt-[50px] pt-[20px] xl:pb-[90px] lg:pb-[70px] md:pb-[60px] pb-[20px]">
     <div class="container">
-      <div class=" flex flex-col lg:flex-row xl:gap-[60px] lg:gap-[50px] md:gap-[40px] gap-[30px] justify-between">
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center xl:gap-[60px] lg:gap-[50px] md:gap-[40px] gap-[15px] lg:justify-between">
         <div class="cta-text w-full lg:!w-1/2 pt-0 xl:!pt-[34px] order-2  rounded-[20px] flex flex-col">
           <h2 class="cta-title text-center xl:text-right max-w-full xl:max-w-[626px] pb-[20px] xl:pb-[40px]">
-            Frequently <br>
+            Frequently <br class="hidden md:block">
             <span class="text-[#F65600]"> Asked </span> Questions
           </h2>
           <div class="flex flex-col items-center gap-[15px] xl:gap-0">
-            <div class="flex flex-col justify-items-start  w-full max-w-full xl:max-w-[630px]">
+            <div class="flex flex-col items-start  lg:text-start  text-center  w-full max-w-full xl:max-w-[630px]">
               <hr class="w-full xl:w-[582px] border-t   border-[#F8B895] " />
-              <div class="flex w-full justify-between items-center px-[15px] xl:pl-8">
+              <div class="flex w-full  justify-center lg:justify-between items-center px-[15px] xl:pl-8">
                 <div class="flex items-center gap-[19px]">
 
                   <span
@@ -329,8 +349,8 @@
 
             </div>
 
-            <div class="flex flex-col items-start  w-full  max-w-full xl:max-w-[630px]">
-              <div class="flex w-full justify-between items-center px-[10px] xl:pl-8">
+            <div class="flex flex-col items-start lg:text-start  text-center w-full  max-w-full xl:max-w-[630px]">
+              <div class="flex w-full justify-center lg:justify-between items-center px-[10px] xl:pl-8">
                 <div class="flex items-center gap-[19px]">
 
                   <span
@@ -351,8 +371,8 @@
 
             </div>
 
-            <div class="flex flex-col items-start  w-full  max-w-full xl:max-w-[630px]">
-              <div class="flex w-full justify-between items-center px-[10px] xl:pl-8">
+            <div class="flex flex-col items-start lg:text-start  text-center w-full  max-w-full xl:max-w-[630px]">
+              <div class="flex w-full justify-center lg:justify-between items-center px-[10px] xl:pl-8">
                 <div class="flex items-center gap-[19px]">
 
                   <span
@@ -372,8 +392,8 @@
               <hr class="w-full xl:w-[582px]  border-b border-[#F8B895] " />
 
             </div>
-            <div class="flex flex-col items-start  w-full  max-w-full xl:max-w-[630px]">
-              <div class="flex w-full justify-between items-center px-[10px] xl:pl-8">
+            <div class="flex flex-col items-start lg:text-start  text-center w-full  max-w-full xl:max-w-[630px]">
+              <div class="flex w-full justify-center lg:justify-between items-center px-[10px] xl:pl-8">
                 <div class="flex items-center gap-[19px]">
 
                   <span
@@ -396,8 +416,8 @@
 
           </div>
         </div>
-        <div class="w-full lg:!w-1/2 cta-sec-2-img order-1">
-          <img src="./assets/images/ask.png" class="w-full h-auto object-cover" alt="logo">
+        <div class="cta-image-right-overlay mt-0 xl:mt-[14px] w-full lg:!w-1/2  order-1">
+          <img src="./assets/images/ask.png" alt="logo">
         </div>
       </div>
     </div>
@@ -407,10 +427,11 @@
 
   <footer class="bg-[#16396F]">
     <div class="container">
-      <div class="flex flex-col md:flex-row  justify-between gap-[30px] md:gap-[60x] xl:gap-[129px] pt-[25px] md:pt-[45px]">
+      <div
+        class="flex flex-col md:flex-row  justify-between gap-[30px] md:gap-[60x] xl:gap-[129px] pt-[25px] md:pt-[45px] text-center sm:text-start">
         <div class="w-full md:max-w-[695px]">
           <div class="text-[#FFE4D5] font-bebas-pro font-bold uppercase 
-         text-[36px] sm:text-[48px] md:text-[60px] lg:text-[88px] xl:text-[115px]
+         text-[32px] sm:text-[48px] md:text-[60px] lg:text-[88px] xl:text-[115px]
          leading-[40px] sm:leading-[54px] md:leading-[76px] lg:leading-[92px] xl:leading-[102px]
          tracking-[1px] sm:tracking-[1.5px] md:tracking-[2px] lg:tracking-[2.2px] xl:tracking-[2.3px]">
             Smoke-N-Wings
@@ -418,40 +439,40 @@
           </div>
 
         </div>
-        <div class="w-full md:max-w-[367px] mt-[20px] xl:mt-[24px]">
+        <div class="w-full md:max-w-[367px] mt-[10px] md:mt-[20px] xl:mt-[24px]">
           <ul class="">
             <li>
-              <a href="enter-competition.html" class="enter-btn px-auto xl:!px-[119px] font-bebas-pro">Enter Competition</a>
+              <a href="enter-competition.html" class="enter-btn px-auto xl:!px-[119px] font-bebas-pro">Enter
+                Competition</a>
             </li>
           </ul>
-          <div class="flex flex-col sm:flex-row gap-[10px]  sm:gap-[40px] md:gap-[60px] lg:gap-[80px] xl:gap-[98px] mt-[20px] md:mt-0">
+          <div
+            class="flex flex-col sm:flex-row gap-[15px]  sm:gap-[30px] md:gap-[60px] lg:gap-[80px] xl:gap-[98px] mt-[20px] md:mt-0">
             <ul
-              class="flex  flex-col  gap-[14px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] xl:py-10 lg:py-8 md:py-6 py-4">
+              class="flex  flex-col  gap-[14px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] xl:pt-10 lg:pt-8 md:pt-6 pt-4 xl:pb-10 lg:pb-8 md:pb-6 sm:pb-4 pb-0">
               <li><a href="rules.html">Rules</a>
               </li>
               <li><a href="sponsors.html">Sponsors</a></li>
               <li><a href="kids-q.html">Kids-Q</a></li>
             </ul>
             <ul
-              class="flex flex-col gap-[12px] md:gap-[18px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] xl:py-10 lg:py-8 md:py-6 py-4">
+              class="flex flex-col gap-[12px] md:gap-[18px]  text-[20px] font-bebas-pro font-bold   leading-normal tracking-[0.4px] uppercase text-[#fff] xl:pt-10 lg:pt-8 md:pt-6 sm:pt-4 pt-0 xl:pb-10 lg:pb-8 md:pb-6 pb-4">
               <li><a href="bingham.html">Bingham Mayors Scholarship</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <hr class="border-t border-[#FFFFFF] mx-auto w-full xl:w-[1334px] xl:ml-[-70px] h-[2px] mt-[-9px]" />
+      <hr class="border-t border-[#FFFFFF] mx-auto w-full xl:w-[1334px] xl:ml-[-70px] h-[2px] mt-0 xl:mt-[-9px]" />
 
-      <div class="flex justify-center items-center py-[20px]">
+      <div class="flex justify-center items-center py-[15px] md:py-[20px]">
         <div
-          class="text-[#FFE4D5] font-jost text-[15px] font-normal leading-normal tracking-[0.3px] uppercase text-center">
+          class="text-[#FFE4D5] font-jost text-[12px] md:text-[15px] font-normal leading-normal tracking-[0.3px] uppercase text-center">
           © copyright 2025 smoke-n-wings.com. All rights reserved.
         </div>
       </div>
 
   </footer>
-
-
 
   <script src="./assets/js/jquery-3.6.1.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
